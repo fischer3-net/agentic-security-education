@@ -48,3 +48,6 @@ htmlcov/
 
 # MkDocs
 /site/
+*.pem
+*.key
+*.crt

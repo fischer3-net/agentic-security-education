@@ -22,7 +22,6 @@ from typing import Dict, Any
 # Stage 3 imports
 
 sys.path.insert(0, '..')
-print(f"DEBUG: sys.path = {sys.path}")
 from auth.nonce_validator import NonceValidator
 from auth.request_signer import RequestSigner, SignedRequestBuilder
 from auth.key_manager import KeyManager
@@ -45,7 +44,7 @@ class Stage3Attacker:
         
         # Initialize Stage 3 security
         self.nonce_validator = NonceValidator()
-        self.request_signer = RequestSigner(self.nonce_validator)
+        self.request_signer = RequestSigner(nonce_validator=self.nonce_validator)  # ✅ USE KEYWORD
         self.key_manager = KeyManager()
         self.deep_validator = DeepValidator()
         self.role_verifier = RoleVerifier()

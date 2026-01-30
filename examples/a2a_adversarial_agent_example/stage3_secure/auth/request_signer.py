@@ -115,7 +115,7 @@ class RequestSigner:
             audit_logger: AuditLogger for comprehensive logging
         """
         # Generate strong key if not provided
-        self.signing_key = signing_key if signing_key else secrets.token_bytes(32)
+        self.signing_key: bytes = signing_key if signing_key is not None else secrets.token_bytes(32)
         
         # Store hash of key (for key identification without exposing key)
         self.key_id = hashlib.sha256(self.signing_key).hexdigest()[:16]
