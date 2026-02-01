@@ -133,21 +133,7 @@ info
 
 ## Architecture Overview
 
-```
-┌──────────┐         ┌──────────┐         ┌──────────┐
-│  Client  │────────>│ Registry │<────────│  Agent   │
-└──────────┘         └──────────┘         └──────────┘
-     │                    ^                     │
-     │                    │                     │
-     │                    │                     │
-     └────────────────────┴─────────────────────┘
-     
-Step 1: Agent registers with Registry
-Step 2: Client discovers agent via Registry
-Step 3: Client connects directly to Agent
-Step 4: Client and Agent communicate via A2A protocol
-```
-
+!["What just happened"](/docs/images/diagrams/what_just_happened.jpg "What just happened")
 ## View the Registry Dashboard
 
 Open your browser to see registered agents:
