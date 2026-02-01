@@ -7,8 +7,8 @@
 **Practical, hands-on education for building secure AI agent systems**
 
 [Get Started](#where-to-begin){ .md-button .md-button--primary }
-[Browse by Topic](#topics){ .md-button }
-[View Examples](#examples){ .md-button }
+[Browse by Topic](#what-this-project-covers){ .md-button }
+[View Examples](#hands-on-examples){ .md-button }
 
 </div>
 
@@ -24,7 +24,7 @@ The core philosophy is simple: **you learn security best by seeing what happens 
 
 ---
 
-## What This Project Covers {#topics}
+## What This Project Covers
 
 <div class="grid cards" markdown>
 
@@ -64,7 +64,7 @@ The core philosophy is simple: **you learn security best by seeing what happens 
 
 ---
 
-## Where to Begin {#where-to-begin}
+## Where to Begin
 
 The right starting point depends on your background and what you're trying to accomplish.
 
@@ -87,7 +87,7 @@ You understand the basics and want to build agents that are secure from the star
 2. **[Security Best Practices](a2a/03_SECURITY/04_security_best_practices.md)** — The controls that matter most
 3. **[Message Validation Patterns](a2a/04_COMMUNICATION/04_message_validation_patterns.md)** — Eight-layer defense in depth
 4. **[MCP Fundamentals](mcp_fundamentals.md)** — Protocol mechanics for tool integration
-5. **[Hands-On Examples](#examples)** — See it all in working code
+5. **[Hands-On Examples](#hands-on-examples)** — See it all in working code
 
 **Estimated time: 4–6 hours**
 
@@ -115,7 +115,7 @@ You don't write code, but you need to understand what's at stake when organizati
 
 ---
 
-## Hands-On Examples {#examples}
+## Hands-On Examples
 
 Each example follows the same pattern: start with an intentionally vulnerable implementation, then progressively harden it stage by stage. By comparing stages, you see exactly what each security control buys you — and what happens without it.
 
