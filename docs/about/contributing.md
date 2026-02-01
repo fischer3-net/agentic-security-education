@@ -39,7 +39,7 @@ This project and everyone participating in it is expected to uphold our standard
 - Publishing others' private information
 - Other conduct that would be considered inappropriate in a professional setting
 
-If you experience or witness unacceptable behavior, please report it to: **robert@fischer3.net**
+If you experience or witness unacceptable behavior, please report it to: **robert@fischer3.org**
 
 ---
 
@@ -84,7 +84,7 @@ We welcome several types of contributions:
 - Developing security testing tools
 - Writing security-focused documentation
 
-**Note:** If you discover a security vulnerability, please report it responsibly to **robert@fischer3.net** rather than opening a public issue.
+**Note:** If you discover a security vulnerability, please report it responsibly to **robert@fischer3.org** rather than opening a public issue.
 
 ### 4. 🐛 Bug Reports
 
@@ -464,7 +464,7 @@ For code examples, include:
 **Found a security issue?** Please report it responsibly:
 
 1. **DO NOT** open a public issue
-2. **DO** email details to: **robert@fischer3.net**
+2. **DO** email details to: **robert@fischer3.org**
 3. **DO** provide:
    - Description of the vulnerability
    - Steps to reproduce
@@ -679,13 +679,13 @@ When appropriate, we'll cite contributors in:
 **Where to ask:**
 - **General questions**: Open a [Discussion](https://github.com/robertfischer3/fischer3_a2a_introduction/discussions)
 - **Bug reports**: Open an [Issue](https://github.com/robertfischer3/fischer3_a2a_introduction/issues)
-- **Security concerns**: Email **robert@fischer3.net**
+- **Security concerns**: Email **robert@fischer3.org**
 - **Contribution help**: Comment on your PR or open a Discussion
 
 ### Contact
 
 **Project Maintainer:** Robert Fischer  
-**Email:** robert@fischer3.net  
+**Email:** robert@fischer3.org  
 **GitHub:** [@robertfischer3](https://github.com/robertfischer3)
 
 ### Communication Guidelines
@@ -785,4 +785,4 @@ Your contributions make this project better for everyone. We appreciate your tim
 
 **Document Version:** 1.0  
 **Last Updated:** December 2025  
-**Maintained By:** Robert Fischer (robert@fischer3.net)
+**Maintained By:** Robert Fischer (robert@fischer3.org)

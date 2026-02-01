@@ -1574,7 +1574,7 @@ This is a significant achievement. Many developers never reach this level of sec
 **Document Version**: 1.0  
 **Stage**: 3 of 3 (Production-Ready)  
 **Last Updated**: December 2024  
-**Maintained By**: Robert Fischer (robert@fischer3.net)  
+**Maintained By**: Robert Fischer (robert@fischer3.org)  
 **Code Location**: `/examples/a2a_crypto_example/security/`
 
 ---

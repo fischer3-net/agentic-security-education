@@ -964,7 +964,7 @@ Before moving on, ensure you understand:
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
 **Status**: Complete  
-**Maintained By**: Robert Fischer (robert@fischer3.net)
+**Maintained By**: Robert Fischer (robert@fischer3.org)
 
 ---
 

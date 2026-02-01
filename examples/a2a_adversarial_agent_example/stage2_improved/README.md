@@ -604,7 +604,7 @@ MIT License - See LICENSE file in repository root
 ## 📞 Questions or Feedback?
 
 **Project Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.net  
+**Email**: robert@fischer3.org  
 **Repository**: [GitHub](https://github.com/robertfischer3/fischer3_a2a_introduction)
 
 ---

@@ -523,7 +523,7 @@ These examples support preparation for:
 ## 📞 Contact
 
 **Project Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.net  
+**Email**: robert@fischer3.org  
 **Project**: A2A Security Learning Examples
 
 ---

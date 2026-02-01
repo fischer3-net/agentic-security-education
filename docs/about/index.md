@@ -358,7 +358,7 @@ This project welcomes contributions! See [contributing.md](https://github.com/ro
 ### Project Creator & Lead
 
 **Robert Fischer**  
-📧 robert@fischer3.net  
+📧 robert@fischer3.org  
 🔗 [LinkedIn](https://www.linkedin.com/in/robertfischer3)  
 🐙 [GitHub](https://github.com/robertfischer3)
 
@@ -424,7 +424,7 @@ By using this project, you acknowledge:
 
 If you discover **unintentional** security issues:
 1. Do NOT exploit in real systems
-2. Email robert@fischer3.net privately
+2. Email robert@fischer3.org privately
 3. Allow reasonable time for fix
 4. Coordinated disclosure encouraged
 
@@ -484,7 +484,7 @@ If you discover **unintentional** security issues:
 
 ### General Inquiries
 
-📧 **Email**: robert@fischer3.net  
+📧 **Email**: robert@fischer3.org  
 💬 **GitHub Discussions**: [Ask a question](https://github.com/robertfischer3/fischer3_a2a_introduction/discussions)
 
 ### For Educators

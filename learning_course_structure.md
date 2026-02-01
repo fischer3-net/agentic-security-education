@@ -419,7 +419,7 @@ project-root/
 ## 📞 Questions or Feedback?
 
 **Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.net  
+**Email**: robert@fischer3.org  
 **Project**: A2A & MCP Learning Documentation
 
 ---

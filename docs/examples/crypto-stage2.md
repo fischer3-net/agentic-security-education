@@ -1186,7 +1186,7 @@ Many systems in production are at Stage 2 level. Now you can identify them and p
 **Document Version**: 1.0  
 **Stage**: 2 of 3 (Improved)  
 **Last Updated**: December 2025 
-**Maintained By**: Robert Fischer (robert@fischer3.net)  
+**Maintained By**: Robert Fischer (robert@fischer3.org)  
 **Code Location**: `/examples/a2a_crypto_simple_registry_example_1/`
 
 ---

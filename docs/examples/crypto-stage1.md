@@ -1003,7 +1003,7 @@ You've completed Stage 1! You now:
 **Document Version**: 1.0  
 **Stage**: 1 of 3 (Vulnerable)  
 **Last Updated**: December 2025  
-**Maintained By**: Robert Fischer (robert@fischer3.net)  
+**Maintained By**: Robert Fischer (robert@fischer3.org)  
 **Code Location**: `/examples/a2a_crypto_example/insecure/`
 
 ---

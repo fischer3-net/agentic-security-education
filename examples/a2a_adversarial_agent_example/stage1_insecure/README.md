@@ -419,7 +419,7 @@ Found a typo? Have a suggestion? Want to add another attack demo?
 ## 📞 Questions or Feedback?
 
 **Project Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.net  
+**Email**: robert@fischer3.org  
 **Project**: [GitHub Repository](https://github.com/robertfischer3/fischer3_a2a_introduction)
 
 ---

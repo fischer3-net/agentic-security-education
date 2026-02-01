@@ -302,7 +302,7 @@ Each guide clearly lists:
 If you find errors or have suggestions:
 1. Check the [Documentation Index](../a2a/INDEX.md)
 2. Review related examples
-3. Contact: robert@fischer3.net
+3. Contact: robert@fischer3.org
 
 ### Technical Issues
 For code or implementation questions:
@@ -351,4 +351,4 @@ Choose your path:
 
 **Last Updated**: December 2025  
 **Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.net
+**Email**: robert@fischer3.org

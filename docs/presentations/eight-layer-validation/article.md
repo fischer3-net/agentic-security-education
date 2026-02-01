@@ -735,4 +735,4 @@ The stakes are high. A single validation gap can compromise an entire agent netw
 ---
 
 **About the Author**: Robert Fischer (fischer3.net) MS Cyber Security, MLA Software Engineering
-Contact at robert@fischer3.net
+Contact at robert@fischer3.org

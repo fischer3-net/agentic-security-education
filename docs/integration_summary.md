@@ -399,7 +399,7 @@ Study security and best practices:
 **Document Version**: 1.0  
 **Last Updated**: December 2026
 **Status**: Active Development  
-**Maintained By**: Robert Fischer (robert@fischer3.net)
+**Maintained By**: Robert Fischer (robert@fischer3.org)
 
 ---
 

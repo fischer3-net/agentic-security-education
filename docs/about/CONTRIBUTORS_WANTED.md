@@ -15,7 +15,7 @@ This security education project has grown beyond one person.
 - **DevOps**: Setup CI/CD, testing
 
 ## Current Maintainer
-Robert Fischer (robert@fischer3.net)
+Robert Fischer (robert@fischer3.org)
 
 ## How to Help
 [See CONTRIBUTING.md](contributing.md)

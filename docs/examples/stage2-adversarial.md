@@ -503,7 +503,7 @@ This motivates the complete approach in Stage 3.
 
 ## Credits
 
-**Created by**: Robert Fischer (robert@fischer3.net)  
+**Created by**: Robert Fischer (robert@fischer3.org)  
 **License**: MIT - Educational use  
 **Status**: Complete ✅  
 **Part of**: [Multi-Agent Security Education Project](../index.md)

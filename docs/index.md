@@ -217,7 +217,7 @@ Contributions are welcome and encouraged.
 - **Found a bug?** Open an issue on [GitHub](https://github.com/fischer3-net/agentic-security-education)
 - **Want to contribute content?** Submit a pull request
 - **Have questions?** Start a discussion
-- **Found a security issue?** Report responsibly to robert@fischer3.net
+- **Found a security issue?** Report responsibly to robert@fischer3.org
 
 Ways to help: improve documentation clarity, add new examples, report security findings, translate to other languages, or share your own implementations.
 
@@ -232,7 +232,7 @@ This project is released under the MIT License.
 ## 📬 Contact
 
 **Project Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.net
+**Email**: robert@fischer3.org
 
 ---
 

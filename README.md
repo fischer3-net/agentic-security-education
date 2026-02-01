@@ -3,7 +3,7 @@
 ## 🎓 A Progressive Learning Journey Through Secure Protocol Implementation
 
 **Organized by Robert Fischer**  
-robert@fischer3.net
+robert@fischer3.org
 
 MIT License
 
@@ -505,7 +505,7 @@ Compare how different security challenges are addressed across domains.
 ## 📬 Contact & Feedback
 
 **Project Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.net
+**Email**: robert@fischer3.org
 
 ### Contributing
 

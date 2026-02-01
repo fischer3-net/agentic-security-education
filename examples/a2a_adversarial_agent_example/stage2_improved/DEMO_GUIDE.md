@@ -350,7 +350,7 @@ A: Use `tee` to save output: `python demo_stage2.py | tee results.txt`
 - **Documentation**: See README.md
 - **Issues**: Check GitHub Issues
 - **Questions**: GitHub Discussions
-- **Email**: robert@fischer3.net
+- **Email**: robert@fischer3.org
 
 ---
 

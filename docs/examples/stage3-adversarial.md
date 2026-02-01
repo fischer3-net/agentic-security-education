@@ -556,7 +556,7 @@ See [CONTRIBUTING.md](https://github.com/robertfischer3/fischer3_a2a_introductio
 ## 📞 Questions?
 
 - **Repository**: [GitHub](https://github.com/robertfischer3/fischer3_a2a_introduction)
-- **Maintainer**: Robert Fischer (robert@fischer3.net)
+- **Maintainer**: Robert Fischer (robert@fischer3.org)
 - **Discussions**: [GitHub Discussions](https://github.com/robertfischer3/fischer3_a2a_introduction/discussions)
 
 ---

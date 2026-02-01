@@ -422,7 +422,7 @@ YOU ARE HERE → 00_A2A_OVERVIEW.md (This document)
 - Documentation unclear? Note what confused you
 - Code example confusing? Suggest improvements
 
-**Contact**: robert@fischer3.net
+**Contact**: robert@fischer3.org
 
 ---
 

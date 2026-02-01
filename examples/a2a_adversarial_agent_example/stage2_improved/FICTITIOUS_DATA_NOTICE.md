@@ -209,7 +209,7 @@ When presenting this material:
 
 If you have concerns about any data in our demonstrations:
 
-- **Email**: robert@fischer3.net
+- **Email**: robert@fischer3.org
 - **GitHub**: Open an issue
 - **Principle**: We err on the side of extreme caution
 

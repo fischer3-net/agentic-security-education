@@ -605,7 +605,7 @@ For understanding the broader A2A context:
 
 **Last Updated**: December 2025
 **Maintained By**: Robert Fischer
-**Questions?**: robert@fischer3.net
+**Questions?**: robert@fischer3.org
 
 ---
 
