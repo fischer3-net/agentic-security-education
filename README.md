@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Documentation](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://learn-a2a-security.fischer3.net)
+[![Documentation](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://agentic-security-education.fischer3.net)
 
 ---
 
@@ -397,7 +397,7 @@ Every Stage 3 example implements all eight layers. The [presentation materials](
 ## Additional Resources
 
 ### Official Documentation
-- [Documentation Site](https://learn-a2a-security.fischer3.net) — Full documentation
+- [Documentation Site](https://agentic-security-education.fischer3.net) — Full documentation
 - [Model Context Protocol Specification](https://modelcontextprotocol.io) — MCP official docs
 - [Agent2Agent Protocol Design](./docs/references.md) — A2A specification
 
@@ -419,7 +419,7 @@ Contributions are welcome and encouraged!
 - **Found a bug?** [Open an issue](https://github.com/fischer3-net/agentic-security-education/issues)
 - **Want to contribute?** Submit a pull request
 - **Have questions?** [Start a discussion](https://github.com/fischer3-net/agentic-security-education/discussions)
-- **Security issue?** Email robert@fischer3.net (responsible disclosure)
+- **Security issue?** Email robert@fischer3.org (responsible disclosure)
 
 ### Ways to Help
 
@@ -496,8 +496,8 @@ This comprehensive document covers:
 ## Contact
 
 **Project Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.net  
-**Website**: [https://learn-a2a-security.fischer3.net](https://learn-a2a-security.fischer3.net)  
+**Email**: robert@fischer3.org  
+**Website**: [https://agentic-security-education.fischer3.net](https://agentic-security-education.fischer3.net)  
 **GitHub**: [https://github.com/fischer3-net/agentic-security-education](https://github.com/fischer3-net/agentic-security-education)
 
 ---

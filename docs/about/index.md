@@ -42,6 +42,8 @@ This isn't toy code. Every module:
 **This entire project is for educational and training purposes only.**  
 Nothing in this repository should be considered production-ready or production-quality.  
 All code examples are deliberately simplified to illustrate concepts and security concerns.
+
+> **⚠️ Production Use Warning**: Stage 3+ code demonstrates production-quality patterns but requires independent security testing, code review, and validation before production deployment. No warranties provided. See [DISCLAIMER.md](/DISCLAIMER.md).
 ---
 
 ## 📚 What's Included
@@ -434,7 +436,7 @@ If you discover **unintentional** security issues:
 
 ### Official Links
 
-- 🏠 **Website**: [learn-a2a-security.fischer3.net](https://learn-a2a-security.fischer3.net)
+- 🏠 **Website**: [agentic-security-education.fischer3.net](https://agentic-security-education.fischer3.net)
 - 🐙 **GitHub**: [robertfischer3/fischer3_a2a_introduction](https://github.com/robertfischer3/fischer3_a2a_introduction)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/robertfischer3/fischer3_a2a_introduction/discussions)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/robertfischer3/fischer3_a2a_introduction/issues)

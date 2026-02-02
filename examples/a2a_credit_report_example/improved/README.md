@@ -423,6 +423,8 @@ After understanding Stage 2:
 - ✅ Understand why partial security fails
 - ✅ Progress to Stage 3 for production patterns
 
+> **⚠️ Production Use Warning**: Stage 3+ code demonstrates production-quality patterns but requires independent security testing, code review, and validation before production deployment. No warranties provided. See [DISCLAIMER.md](./DISCLAIMER.md).
+
 ---
 
 ## 📚 Additional Context

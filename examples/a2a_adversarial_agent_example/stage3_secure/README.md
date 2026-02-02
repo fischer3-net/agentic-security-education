@@ -9,7 +9,7 @@
 
 ---
 
-**⚠️ Note**: While this stage demonstrates production-quality security controls, any production use requires independent security testing and validation. See [full disclaimer](./DISCLAIMER.md).
+**⚠️ Note**: While this stage demonstrates production-quality security controls, any production use requires independent security testing and validation. See [full disclaimer](/DISCLAIMER.md).
 
 ## 🔐 Security Enhancements
 

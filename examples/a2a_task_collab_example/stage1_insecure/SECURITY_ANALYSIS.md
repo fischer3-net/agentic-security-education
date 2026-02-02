@@ -59,6 +59,9 @@ The Task Collaboration Agent (Stage 1) is an **intentionally vulnerable** multi-
 
 This system is suitable **only for educational purposes** to teach security vulnerabilities.
 
+**This project provides education only, not production support or security guarantees.**
+> 📋 [Read Full Disclaimer](/DISCLAIMER.md) before using any code in production.
+
 ---
 
 ## 2. Vulnerability Matrix {#vulnerability-matrix}
@@ -2421,6 +2424,7 @@ This intentionally vulnerable implementation serves as an **excellent teaching t
 
 **⚠️ DISCLAIMER**: This system is INTENTIONALLY VULNERABLE for educational purposes. DO NOT DEPLOY TO PRODUCTION. The vulnerabilities documented here are real and exploitable. Use only in isolated educational environments.
 
+> **⚠️ Production Use Warning**: Stage 3+ code demonstrates production-quality patterns but requires independent security testing, code review, and validation before production deployment. No warranties provided. See [DISCLAIMER.md](/DISCLAIMER.md).
 ---
 
 ## Appendix A: Vulnerability Testing Checklist
