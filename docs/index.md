@@ -11,8 +11,9 @@
 [View Examples](#hands-on-examples){ .md-button }
 
 </div>
-
 ---
+
+<img src="./images/logos/fischer3_logo.jpeg" width="150" height="150" />
 
 ## Welcome
 
