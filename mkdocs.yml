@@ -2,7 +2,7 @@
 site_name: Agentic AI Security Education - fischer³ A2A and MCP Introduction
 site_description: A break first comprehensive learning path for secure agent-to-agent communication
 site_author: Robert Fischer (robert@fischer3.org)
-site_url: https://learn-a2a-security.fischer3.net/
+site_url: https://agentic-security-education.fischer3.net
 
 # Repository
 repo_name: fischer³ Agentic Security Education
@@ -10,7 +10,7 @@ repo_url: https://github.com/fischer3-net/agentic-security-education.git
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2026 fischer³ (fischer3.net), MIT License
+copyright: Copyright &copy; 2026 fischer³ (fischer3.org), MIT License
 
 # Theme Configuration
 theme:

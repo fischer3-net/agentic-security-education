@@ -9,6 +9,8 @@
 
 ---
 
+**⚠️ Note**: While this stage demonstrates production-quality security controls, any production use requires independent security testing and validation. See [full disclaimer](./DISCLAIMER.md).
+
 ## 🔐 Security Enhancements
 
 Stage 3 implements **7 critical security layers** that block ALL Stage 2 attacks:

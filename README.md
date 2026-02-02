@@ -1,318 +1,187 @@
-# MCP & A2A Security Learning Project
+# fischer³ Agentic AI Security Education
 
-## 🎓 A Progressive Learning Journey Through Secure Protocol Implementation
+**Practical, hands-on education for building secure AI agent systems**
 
-**Organized by Robert Fischer**  
-robert@fischer3.org
-
-MIT License
-
----
-
-## ⚠️ CRITICAL DISCLAIMER
-
-**This entire project is for educational and training purposes only.**  
-Nothing in this repository should be considered production-ready or production-quality.  
-All code examples are deliberately simplified to illustrate concepts and security concerns.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Documentation](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://learn-a2a-security.fischer3.net)
 
 ---
 
-## 🎯 Project Purpose
+## What This Project Is
 
-This learning project provides a structured path for developers to understand:
+AI agents are already talking to each other. The Agent-to-Agent (A2A) protocol and the Model Context Protocol (MCP) are the emerging standards for how autonomous systems communicate and collaborate. But most existing resources give you a glossy overview and wish you good luck figuring out the security implications.
 
-1. **Model Context Protocol (MCP)** - Connecting AI agents to tools and resources
-2. **Agent2Agent Protocol (A2A)** - Enabling multi-agent communication and orchestration
-3. **Security Concerns** - Identifying vulnerabilities in protocol implementations
-4. **Secure Implementation** - Building production-ready systems with proper security controls
+**This project is different.** It teaches agentic AI security the way security should be taught: by starting with deliberately vulnerable code, showing you exactly what breaks and why, then progressively building up to production-ready implementations that withstand real attacks.
 
-### What Makes This Different?
-
-Unlike typical documentation, this project:
-- **Shows vulnerable code first** - Learn to recognize security anti-patterns
-- **Explains the risks** - Understand *why* vulnerabilities matter
-- **Demonstrates fixes** - See how to implement proper security controls
-- **Provides context** - In-depth articles explain complex security concepts
-- **Multiple learning paths** - Three complete example progressions covering different security domains
+Every example follows the same pattern: **vulnerable → improved → secure**. By the time you reach the production stages, you won't just know *what* controls to implement — you'll deeply understand *why* each one exists and *what* happens without it.
 
 ---
 
-## 🚀 Quick Start
-
-### For Complete Beginners
-1. **Read**: [A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md) ← Start here!
-2. **Learn**: [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)
-3. **Choose**: Pick an example domain that interests you (see examples below)
-4. **Study**: Begin with Stage 1 of your chosen example
-
-### For Security-Focused Developers
-1. **Understand threats**: [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md)
-2. **Learn defense**: [Authentication Overview](./docs/a2a/03_SECURITY/01_authentication_overview.md)
-3. **Compare examples**: Review security analyses across all three example domains
-4. **Practice**: Work through attack scenarios in each stage
-
-### For Protocol Implementers
-1. **Understand protocol**: [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md)
-2. **Learn identity**: [Agent Identity](./docs/a2a/01_FUNDAMENTALS/02_agent_identity.md)
-3. **Master security**: [Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md)
-4. **Use templates**: Stage 3 implementations from any example as production templates
+> ### 🚨 CRITICAL PRODUCTION DISCLAIMER
+> 
+> **Stage 1-2 Code**: ❌ NEVER use in production - intentionally vulnerable for education only
+> 
+> **Stage 3+ Code**: ⚠️ Production-quality patterns but require YOUR validation before production use
+> 
+> **NO WARRANTIES**: This project is provided "AS IS" under MIT License with no warranties of any kind, express or implied. You assume ALL responsibility for production deployments including:
+> - Independent security testing and penetration testing
+> - Code review and vulnerability scanning  
+> - Compliance verification for your specific requirements
+> - Infrastructure security and operational procedures
+> 
+> **This project provides education only, not production support or security guarantees.**
+> 
+> 📋 [Read Full Disclaimer](./DISCLAIMER.md) before using any code in production.
 
 ---
 
-## 💻 Learning Examples - Three Complete Security Journeys
+## What You'll Learn
 
-The project includes **three comprehensive examples**, each focusing on different security domains while following the same progressive learning approach:
+<div align="center">
 
-### 🪙 Example 1: Cryptocurrency Price Agent
-**Focus**: Query Security & Basic A2A Protocol  
-**Location**: `examples/a2a_crypto_example/`
+### 🎯 Core Topics
+
+</div>
+
+**Agent-to-Agent (A2A) Protocol Security**
+- Agent identity, discovery, and registration patterns
+- Message validation and the eight-layer framework
+- Authentication mechanisms and threat modeling
+- Session management and state security
+- Defense-in-depth across distributed agent systems
+
+**Model Context Protocol (MCP) Security**
+- How agents connect to tools and resources
+- Secure server and client implementation patterns
+- The agent-tool security boundary
+- Tool access validation and authorization
+
+**Integration & Architecture**
+- How A2A and MCP work together
+- Multi-agent system design patterns
+- Distributed session management with Redis
+- Web framework integration (Flask, JWT)
+- Behavioral analysis and automated threat response
+
+**Security Frameworks**
+- Eight-layer input validation
+- Three-stage security analysis (vulnerable → partial → comprehensive)
+- Adversarial agent scenarios
+- Compliance mapping (PCI-DSS, GDPR, HIPAA, SOX)
+
+---
+
+## Four Complete Learning Journeys
+
+Each example demonstrates security evolution through multiple stages. All examples are production-quality in their final stages and include comprehensive documentation, attack demonstrations, and security analyses.
+
+### 🪙 [Cryptocurrency Price Agent](./examples/a2a_crypto_example/)
+
+**Focus**: Query security and basic A2A protocol fundamentals  
+**Best For**: Beginners to A2A, API developers, foundational security patterns
 
 **What You'll Learn**:
-- Core A2A protocol fundamentals
+- Core A2A protocol mechanics
 - Basic authentication and authorization
 - Input validation and injection prevention
 - API security patterns
 - Real-time data security
 
-**Stages**:
-- **Stage 1 (Vulnerable)**: No security, basic A2A implementation
-- **Stage 2 (Improved)**: Basic registry and simple authentication
-- **Stage 3 (Secure)**: Full production security with cryptographic controls
+**Progression**:
+- **Stage 1**: No security, 15+ vulnerabilities
+- **Stage 2**: Registry and basic authentication
+- **Stage 3**: Production security with cryptographic controls
 
-**Best For**: Beginners to A2A protocol, API developers, learning fundamental security patterns
-
-[View Crypto Agent README](./examples/a2a_crypto_example/README.md)
+**Time**: 4-6 hours
 
 ---
 
-### 📊 Example 2: Credit Report Analysis Agent
-**Focus**: File Upload Security & PII Protection  
-**Location**: `examples/a2a_credit_report_example/`
+### 📊 [Credit Report Analysis Agent](./examples/a2a_credit_report_example/)
+
+**Focus**: File upload security, PII protection, and compliance  
+**Best For**: Document processing systems, compliance-heavy applications, AI integration
 
 **What You'll Learn**:
 - File upload security and validation
-- PII protection (GDPR/HIPAA compliance)
-- 8-layer validation framework
-- Path traversal prevention
-- Magic byte validation
+- PII protection (GDPR/HIPAA patterns)
+- Eight-layer validation framework
+- Path traversal and magic byte validation
 - Secure file handling
-- AI integration security (Stage 4)
+- AI integration security (Gemini)
 
-**Stages**:
-- **Stage 1 (Insecure)**: Vulnerable file handling, no validation
-- **Stage 2 (Improved)**: Basic validation, limited PII protection
-- **Stage 3 (Secure)**: Production-ready file security
-- **Stage 4 (AI-Enhanced)**: Secure AI integration with Gemini
+**Progression**:
+- **Stage 1**: Vulnerable file handling, no validation
+- **Stage 2**: Basic validation, limited PII protection
+- **Stage 3**: Production-ready file security
+- **Stage 4**: Secure AI integration
 
-**Best For**: Document processing systems, compliance-heavy applications, PII handling, AI security
-
-[View Credit Report README](./examples/a2a_credit_report_example/README.md)
+**Time**: 19-26 hours
 
 ---
 
-### 🤝 Example 3: Task Collaboration System (NEW!)
-**Focus**: Session Management & Multi-Agent Coordination  
-**Location**: `examples/a2a_task_collab_example/`
+### 🤝 [Task Collaboration System](./examples/a2a_task_collab_example/)
+
+**Focus**: Session management, state security, distributed systems  
+**Best For**: Multi-agent coordination, session security, production scaling
 
 **What You'll Learn**:
-- **Session lifecycle management**
-- Session hijacking and fixation attacks
-- Stale permissions and state security
+- Session management fundamentals
+- State security and binding
 - Multi-agent coordination patterns
-- Distributed session storage (Redis)
-- Web framework integration (Flask)
-- Long-running workflow security
-- Concurrent session handling
+- Distributed sessions with Redis
+- Web framework integration (Flask + JWT)
+- Session hijacking and fixation prevention
 
-**System Architecture**:
-```
-[Coordinator Agent] ← Manages projects and sessions
-    ↓
-[Worker Agents] ← Execute specialized tasks
-    ↓
-[Audit Agent] ← Monitors all activities
-```
+**Progression**:
+- **Stage 1**: 25+ session vulnerabilities
+- **Stage 2**: Partial session fixes
+- **Stage 3**: SessionManager with comprehensive security
+- **Stage 4**: Distributed Redis-backed sessions
+- **Stage 5**: Web framework integration
 
-**Stages**:
-- **Stage 1 (Insecure)**: 25+ vulnerabilities, TCP-based
-- **Stage 2 (Improved)**: Partial fixes, HMAC authentication
-- **Stage 3 (Secure)**: Production SessionManager, RSA authentication
-- **Stage 4 (Distributed)**: Redis-backed distributed sessions
-- **Stage 5 (Web Framework)**: Flask integration with JWT
-
-**Best For**: Collaborative systems, project management, web applications, distributed systems, session-heavy applications
-
-**Unique Features**:
-- ✅ Dedicated SessionManager class (reusable)
-- ✅ Multiple session types (coordinator, worker, audit)
-- ✅ Rich state management (projects, tasks, permissions)
-- ✅ True multi-agent collaboration
-- ✅ Attack demonstrations built into client
-- ✅ Distributed and web framework patterns
-
-[View Task Collaboration README](./examples/a2a_task_collab_example/README.md)  
-[View Quick Reference Guide](./examples/a2a_task_collab_example/task_collab_quickstart.md)
-[View Quick Reference Guide](./examples/a2a_task_collab_example/task_collab_quickstart.md)
-
-
-
-## 📊 Example Comparison Matrix
-
-| Feature | Credit Report | Crypto Agent | Task Collab | Adversarial Agent |
-|---------|--------------|--------------|-------------|-------------------|
-| **Primary Focus** | File Upload & PII | API Integration | Session Management | Adversarial Defense |
-| **Stages** | 4 | 3 | 5 | 3 |
-| **Difficulty** | ⭐⭐⭐ Advanced | ⭐⭐ Intermediate | ⭐⭐⭐⭐ Expert | ⭐⭐⭐ Advanced |
-| **Compliance** | FCRA, GDPR | Basic | RBAC, Audit | Zero-Trust |
-| **Encryption** | Field-level | Transport | Full stack | Transport + JWT |
-| **AI Integration** | ✅ Stage 4 | ❌ | ❌ | ❌ |
-| **Multi-Agent** | ❌ | ❌ | ✅ | ✅ |
-| **Attack Types** | File-based | Query-based | Session-based | Multi-vector |
-| **Defense Focus** | Prevention | Prevention | Prevention | Detection + Response |
-| **Total Hours** | 19-26 | 2-3 | 15-22 | 8-12 |
+**Time**: 17-22 hours
 
 ---
 
-## 📚 Documentation Structure
+### 🤖 [Adversarial Agent System](./examples/a2a_adversarial_agent_example/)
 
-### 🎓 **[Complete Documentation Index](./docs/a2a/INDEX.md)** ← Browse all docs
+**Focus**: Attack patterns, behavioral analysis, automated defense  
+**Best For**: Security professionals, threat modeling, adversarial scenarios
 
-### Core Documentation
+**What You'll Learn**:
+- Real attack vectors against agent systems
+- Data exfiltration techniques
+- Privilege escalation patterns
+- Behavioral anomaly detection
+- Automated quarantine systems
+- Zero-trust architecture
 
-#### **Phase 1: Foundation Concepts** 🔰
-- [📖 A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md) - **Start your learning journey**
-- [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md) - Protocol architecture
-- [Agent Identity](./docs/a2a/01_FUNDAMENTALS/02_agent_identity.md) - How agents identify themselves
-- [Agent Cards](./docs/a2a/02_DISCOVERY/01_agent_cards.md) - Agent capability discovery
-- [Agent Registry](./docs/a2a/02_DISCOVERY/02_agent_registry.md) - Service discovery mechanisms
+**Progression**:
+- **Stage 1**: 5 attacks succeed, all defenses fail
+- **Stage 2**: Partial security, 4 sophisticated attacks still succeed
+- **Stage 3**: Comprehensive defense, behavioral analysis, zero attacks succeed
 
-#### **Phase 2: Security Mastery** 🔐
-- [Authentication Overview](./docs/a2a/03_SECURITY/01_authentication_overview.md) - Trust models & methods
-- [Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md) - Agent identity verification
-- [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md) - Attack vectors & mitigations
-- [Security Comparison Guide](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md) - Example progression analysis
-
-#### **Phase 3: Protocol Communication** 📡
-- [Protocol Messages](./docs/a2a/04_COMMUNICATION/01_protocol_messages.md) - Message structure and types
-- [Streaming & Events](./docs/a2a/04_COMMUNICATION/02_streaming_events.md) - Real-time communication
+**Time**: 8-12 hours
 
 ---
 
-## 🎓 Recommended Learning Paths
+## Quick Start
 
-### Complete Security Education (8-10 weeks)
-
-**Week 1-2: Foundation + Query Security**
-- Read A2A fundamentals documentation
-- Complete Cryptocurrency Agent (Stages 1-3)
-- Master basic A2A protocol and API security
-
-**Week 3-5: File & Privacy Security**
-- Complete Credit Report Agent (Stages 1-4)
-- Master file upload security and validation
-- Learn PII protection and compliance patterns
-- Explore AI integration security
-
-**Week 6-8: Session & State Security**
-- Complete Task Collaboration Agent (Stages 1-3)
-- Master session management and binding
-- Learn multi-agent coordination patterns
-- Understand state security
-
-**Week 9-10: Advanced Topics (Optional)**
-- Task Collaboration Stage 4 (Distributed systems)
-- Task Collaboration Stage 5 (Web frameworks)
-- Cross-example security comparison
-- Build your own secure agent system
-
-### Quick Introduction (3-5 days)
-
-**Day 1: Foundation**
-- A2A Overview and core concepts
-- Choose example based on interest
-
-**Day 2-3: Basic Security**
-- Complete Stage 1 of chosen example
-- Study security analysis
-- Try attack demonstrations
-
-**Day 4-5: Secure Implementation**
-- Complete Stages 2-3 of chosen example
-- Compare security evolution
-- Understand production patterns
-
-### Specialized Learning Paths
-
-**For API Developers**
-→ Cryptocurrency Agent (focus on query security)
-
-**For File Processing Systems**
-→ Credit Report Agent (focus on upload security)
-
-**For Web Application Developers**
-→ Task Collaboration Agent (focus on sessions)
-
-**For Multi-Agent Systems**
-→ Task Collaboration Agent (focus on coordination)
-
-**For AI Integration**
-→ Credit Report Agent Stage 4 (focus on AI security)
-
-**For Distributed Systems**
-→ Task Collaboration Agent Stage 4-5 (focus on scaling)
-
----
-
-## 🔐 Key Security Principles Demonstrated
-
-Throughout all examples, you'll see these principles in action:
-
-1. **Defense in Depth** - Multiple layers of security controls
-2. **Principle of Least Privilege** - Agents only get capabilities they need
-3. **Zero Trust** - Verify every request, trust nothing
-4. **Fail Secure** - System defaults to denial when unsure
-5. **Audit Everything** - Comprehensive logging for security events
-6. **Input Validation** - Never trust external data
-7. **Cryptographic Verification** - Prove identity and integrity
-8. **Session Binding** - Tie sessions to agent identity
-9. **State Protection** - Encrypt and validate state transitions
-10. **Rate Limiting** - Prevent resource exhaustion
-
----
-
-## 🎯 Learning Objectives
-
-By completing this project, you will be able to:
-
-### Technical Skills
-- ✅ Implement A2A protocol with proper security
-- ✅ Integrate MCP for tool access
-- ✅ Design secure multi-agent architectures
-- ✅ Identify and mitigate common vulnerabilities
-- ✅ Implement cryptographic security controls
-- ✅ Build production-ready agent systems
-- ✅ Handle file uploads securely
-- ✅ Protect PII and comply with regulations
-- ✅ Manage sessions and state securely
-- ✅ Coordinate multiple agents safely
-- ✅ Scale to distributed systems
-- ✅ Integrate AI services securely
-
-### Security Skills
-- ✅ Recognize security anti-patterns in code
-- ✅ Perform threat modeling for distributed systems
-- ✅ Implement defense-in-depth strategies
-- ✅ Design secure authentication/authorization
-- ✅ Monitor and audit security events
-- ✅ Apply zero-trust principles
-- ✅ Prevent common attacks (injection, traversal, hijacking, etc.)
-- ✅ Validate and sanitize all inputs
-- ✅ Implement secure session management
-- ✅ Protect sensitive data (PII, state, files)
-
----
-
-## 🛠️ Getting Started
+> ### ⚠️ Before You Begin
+> 
+> **For Learning (Stage 1-2)**:
+> - ✅ Use in isolated test environments only
+> - ✅ Never connect to production systems
+> - ✅ Use synthetic data only
+> 
+> **For Production (Stage 3+)**:
+> - ⚠️ Independent security testing required
+> - ⚠️ Code review by your security team required
+> - ⚠️ Compliance verification required
+> - ⚠️ No warranties - you assume all responsibility
+> 
+> 📋 [Full Disclaimer & Checklist](./DISCLAIMER.md)
 
 ### Prerequisites
 
@@ -331,8 +200,8 @@ python --version
 
 ```bash
 # Clone repository
-git clone https://github.com/robertfischer3/fischer3_a2a_introduction.git
-cd fischer3_a2a_introduction
+git clone https://github.com/fischer3-net/agentic-security-education.git
+cd agentic-security-education
 
 # Create virtual environment
 python -m venv venv
@@ -342,247 +211,318 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # See individual example READMEs for specific requirements
 ```
 
-### Choose Your Example
+### Choose Your Starting Point
 
 ```bash
-# Example 1: Cryptocurrency Agent
+# Example 1: Cryptocurrency Agent (foundational)
 cd examples/a2a_crypto_example
 python insecure_agent.py
 
-# Example 2: Credit Report Agent
+# Example 2: Credit Report Agent (file security & PII)
 cd examples/a2a_credit_report_example/stage1_insecure
 python server.py
 
-# Example 3: Task Collaboration Agent
+# Example 3: Task Collaboration (session management)
 cd examples/a2a_task_collab_example/stage1_insecure
 python server/task_coordinator.py
+
+# Example 4: Adversarial Agent (attack & defense)
+cd examples/a2a_adversarial_agent_example/stage1_insecure
+python demo_attacks.py
 ```
 
 ---
 
-## 📖 Additional Resources
+## Learning Paths
 
-### Official Documentation
-- [Model Context Protocol Specification](https://modelcontextprotocol.io)
-- [Agent2Agent Protocol Design](./docs/references.md)
-- [Agent2Agent Protocol Design](./docs/references.md)
+### For Complete Beginners
 
-### Presentation Materials
-- [View Slides](https://robertfischer3.github.io/fischer3_a2a_introduction)
-- [Markdown Source](docs/presentations/eight-layer-validation/slides.md)
-- [Markdown Source](docs/presentations/eight-layer-validation/slides.md)
+**Goal**: Understand agentic AI security fundamentals
 
-### Example Comparisons
-- [Detailed Example Comparison](./examples/a2a_task_collab_example/task_collab_comparision.md)
-- [Session Security Cheat Sheet](./examples/a2a_task_collab_example/A2A_SESSION_SECURITY_CHEAT_SHEET.md)
+1. [A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md) — What is agent-to-agent communication?
+2. [Core Concepts](./docs/a2a/01_FUNDAMENTALS/01_core_concepts.md) — Building blocks of A2A systems
+3. [Cryptocurrency Agent - Stage 1](./examples/a2a_crypto_example/) — First hands-on example
+4. [MCP Summary](./docs/mcp_summary.md) — How agents connect to tools
 
-### Utility Tools
-- [UV Python Environment Guide](docs/supplementary/tools/UV_COMPLETE_GUIDE.md) - Modern Python dependency management
+**Time**: 4-6 hours
 
 ---
 
-## 🗂️ Project Structure
+### For Developers Building Agents
+
+**Goal**: Build secure agents from day one
+
+1. [A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md) — Protocol orientation
+2. [Security Best Practices](./docs/a2a/03_SECURITY/04_security_best_practices.md) — Critical controls
+3. [Message Validation Patterns](./docs/a2a/04_COMMUNICATION/04_message_validation_patterns.md) — Eight-layer defense
+4. [MCP Fundamentals](./docs/mcp_fundamentals.md) — Tool integration security
+5. Work through all stages of at least two examples
+
+**Time**: 20-30 hours
+
+---
+
+### For Security Professionals
+
+**Goal**: Audit and secure agentic systems
+
+1. [Threat Model](./docs/a2a/03_SECURITY/03_threat_model.md) — Attack vectors
+2. [Authentication Tags](./docs/a2a/03_SECURITY/02_authentication_tags.md) — Cryptographic verification
+3. [Code Walkthrough](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md) — Vulnerable vs. secure
+4. [Session State Security](./docs/a2a/03_SECURITY/06_session_state_security.md) — State management attacks
+5. [Adversarial Agent - All Stages](./examples/a2a_adversarial_agent_example/) — Complete attack/defense analysis
+6. [Security Checklist](./docs/presentations/agent_security_article_enhanced/security_checklist.md) — 200+ item audit tool
+
+**Time**: 12-16 hours
+
+---
+
+### For Non-Technical Stakeholders
+
+**Goal**: Understand risks and make informed decisions
+
+1. [AI Collaboration Fundamentals](./docs/non-technical/01_fundamentals/AI_Collaboration_Fundamentals.md) — No code required
+2. [Security for Non-Technical Audiences](./docs/non-technical/02_security/Security_for_Non_Technical_Audiences.md) — Plain language risk
+3. [Agent Security Article - Executive Summary](./docs/presentations/agent-security/agent_security_article_enhanced.md) — Business case
+4. [Presentation Materials](./docs/presentations/index.md) — Briefing decks
+
+**Time**: 2-3 hours
+
+---
+
+## The Eight-Layer Security Framework
+
+A central theme throughout this project is **defense in depth** — no single control is sufficient. The eight-layer framework provides structure:
+
+| Layer | Control | Protection Against |
+|-------|---------|-------------------|
+| **1** | Transport Security (TLS 1.3) | Eavesdropping, interception |
+| **2** | Authentication | Impersonation, identity fraud |
+| **3** | Session Management | Hijacking, state manipulation |
+| **4** | Authorization (RBAC) | Unauthorized operations |
+| **5** | Message Integrity (HMAC) | Tampering |
+| **6** | Replay Protection | Message reuse |
+| **7** | Rate Limiting | Brute-force, volume attacks |
+| **8** | Input Validation | Injection, malformed data |
+
+Every Stage 3 example implements all eight layers. The [presentation materials](./docs/presentations/index.md) provide extensive training content around this framework.
+
+---
+
+## Project Structure
 
 ```
-📁 Project Root
+📁 agentic-security-education/
 │
-├── 📖 Documentation
-│   └── docs/a2a/
-│       ├── 00_A2A_OVERVIEW.md         # Start here!
-│       ├── INDEX.md                   # Complete doc index
-│       ├── 01_FUNDAMENTALS/           # Core concepts
-│       ├── 02_DISCOVERY/              # Service discovery
-│       ├── 03_SECURITY/               # Security deep dives ⭐
-│       ├── 04_COMMUNICATION/          # Protocol messages
-│       └── 05_REFERENCE/              # Technical reference
+├── 📖 Documentation (docs/)
+│   ├── a2a_summary.md              # A2A protocol entry point
+│   ├── mcp_summary.md              # MCP protocol entry point
+│   ├── integration_summary.md      # How they work together
+│   ├── index.md                    # Main documentation site
+│   │
+│   ├── a2a/                        # A2A Protocol deep dives
+│   │   ├── 00_A2A_OVERVIEW.md
+│   │   ├── INDEX.md
+│   │   ├── 01_FUNDAMENTALS/        # Core concepts
+│   │   ├── 02_DISCOVERY/           # Service discovery
+│   │   ├── 03_SECURITY/            # Security deep dives ⭐
+│   │   ├── 04_COMMUNICATION/       # Protocol messages
+│   │   └── 05_REFERENCE/           # Technical reference
+│   │
+│   ├── presentations/               # Training materials
+│   │   ├── index.md
+│   │   ├── eight-layer-validation/ # Input validation framework
+│   │   └── agent-security/         # Comprehensive security
+│   │
+│   ├── guides/                      # How-to guides
+│   ├── non-technical/               # Non-developer resources
+│   └── supplementary/               # Tools and utilities
 │
-├── 💻 Example 1: Cryptocurrency Agent
-│   └── examples/a2a_crypto_example/
-│       ├── Stage 1: Vulnerable baseline
-│       ├── Stage 2: Registry + basic auth
-│       └── Stage 3: Production security
+├── 💻 Example 1: Cryptocurrency Agent (examples/a2a_crypto_example/)
+│   ├── Stage 1: Vulnerable baseline
+│   ├── Stage 2: Registry + basic auth
+│   └── Stage 3: Production security
 │
-├── 💻 Example 2: Credit Report Agent
-│   └── examples/a2a_credit_report_example/
-│       ├── stage1_insecure/          # Vulnerable file handling
-│       ├── stage2_improved/          # Basic validation
-│       ├── stage3_secure/            # Production security
-│       └── stage4_ai/                # AI integration
+├── 💻 Example 2: Credit Report Agent (examples/a2a_credit_report_example/)
+│   ├── stage1_insecure/            # Vulnerable file handling
+│   ├── stage2_improved/            # Basic validation
+│   ├── stage3_secure/              # Production security
+│   └── stage4_ai/                  # AI integration
 │
-├── 💻 Example 3: Task Collaboration System ✨ NEW
-│   └── examples/a2a_task_collab_example/
-│       ├── stage1_insecure/          # 25+ vulnerabilities
-│       ├── stage2_improved/          # Partial fixes
-│       ├── stage3_secure/            # SessionManager
-│       ├── stage4_distributed/       # Redis integration
-│       └── stage5_web_framework/     # Flask + JWT
-|
-├── 💻 Example 4: Adversarial Agent ✨ NEW
-│   └── examples/a2a_adversarial_agent_example/
-│       ├── stage1_insecure/         # 25+ vulnerabilities
-│       ├── stage2_improved/         # Partial fixes
-│       ├── stage3_secure/            
-|
-├── 💻 Example 4: Adversarial Agent ✨ NEW
-│   └── examples/a2a_adversarial_agent_example/
-│       ├── stage1_insecure/         # 25+ vulnerabilities
-│       ├── stage2_improved/         # Partial fixes
-│       ├── stage3_secure/            
+├── 💻 Example 3: Task Collaboration (examples/a2a_task_collab_example/)
+│   ├── stage1_insecure/            # 25+ vulnerabilities
+│   ├── stage2_improved/            # Partial fixes
+│   ├── stage3_secure/              # SessionManager
+│   ├── stage4_distributed/         # Redis integration
+│   └── stage5_web_framework/       # Flask + JWT
 │
-├── 🛠️ MCP Examples
-│   └── mcp_examples/
-│       └── mcp_server_example/       # Basic MCP server
+├── 💻 Example 4: Adversarial Agent (examples/a2a_adversarial_agent_example/)
+│   ├── stage1_insecure/            # All attacks succeed
+│   ├── stage2_improved/            # Partial defenses
+│   └── stage3_secure/              # Comprehensive defense
 │
-├── 🔧 Utilities
-│   └── side_topic_guidance/
-│       └── uv/                       # Python environment tools
+├── 🛠️ MCP Examples (mcp_examples/)
+│   ├── mcp_client_w_sql_lite/      # Complete MCP client/server
+│   └── your_first_mcp_server/      # Tutorial implementation
 │
-└── 🎨 Presentation Materials
-    └── docs/
-        ├── slides.pdf
-        └── SLIDES.md
+└── 🔧 Utilities (utils/)
+    ├── check_markdown_links.py     # Documentation QA
+    └── fix_markdown_links.py       # Link maintenance
 ```
 
 ---
 
-## 📊 Project Statistics
+## Project Statistics
 
 ### Documentation
-- **Total Documentation Files**: 20+
-- **Security Deep Dives**: 5 comprehensive guides
-- **Learning Paths**: 3 complete progressions
+- **Total Files**: 50+ comprehensive guides
+- **Security Deep Dives**: 8 major topics
+- **Learning Paths**: 4 audience-specific journeys
+- **Lines of Documentation**: 30,000+
 
-### Examples
-- **Total Stages**: 13 progressive implementations
-- **Lines of Code**: 10,000+ (across all stages)
-- **Vulnerabilities Demonstrated**: 75+ unique security issues
-- **Attack Scenarios**: 30+ with demonstrations
+### Code Examples
+- **Total Stages**: 15 progressive implementations
+- **Lines of Code**: 15,000+ (across all stages)
+- **Vulnerabilities Demonstrated**: 90+ unique security issues
+- **Attack Scenarios**: 35+ with working demonstrations
 
 ### Coverage
-- **A2A Protocol**: Complete implementation
-- **MCP Integration**: Basic to advanced
-- **Security Topics**: 15+ domains covered
-- **Real-World Patterns**: Distributed, web, AI, multi-agent
+- **A2A Protocol**: Complete specification and implementation
+- **MCP Integration**: Fundamentals through production patterns
+- **Security Domains**: Query, file, session, adversarial, distributed, web
+- **Real-World Patterns**: Multi-agent, distributed systems, AI integration
 
 ---
 
-## 🤝 How to Use This Project
+## Additional Resources
 
-### As a Course
-Follow the phases sequentially, completing exercises at each stage.
+### Official Documentation
+- [Documentation Site](https://learn-a2a-security.fischer3.net) — Full documentation
+- [Model Context Protocol Specification](https://modelcontextprotocol.io) — MCP official docs
+- [Agent2Agent Protocol Design](./docs/references.md) — A2A specification
+
+### Presentation Materials
+- [Presentations Index](./docs/presentations/index.md) — Training resources
+- [Eight-Layer Validation](./docs/presentations/eight-layer-validation/) — Input validation framework
+- [Agent Security](./docs/presentations/agent-security/) — Comprehensive security training
+
+### Utility Tools
+- [UV Python Environment Guide](./docs/supplementary/tools/UBUNTU_QUICKSTART.md) — Modern dependency management
+- [Markdown Link Checker](./utils/check_markdown_links.py) — Documentation QA
+
+---
+
+## Contributing
+
+Contributions are welcome and encouraged!
+
+- **Found a bug?** [Open an issue](https://github.com/fischer3-net/agentic-security-education/issues)
+- **Want to contribute?** Submit a pull request
+- **Have questions?** [Start a discussion](https://github.com/fischer3-net/agentic-security-education/discussions)
+- **Security issue?** Email robert@fischer3.net (responsible disclosure)
+
+### Ways to Help
+
+- Improve documentation clarity
+- Add new examples or extend existing ones
+- Report security findings
+- Translate to other languages
+- Share your implementations
+- Create tutorial videos
+- Write blog posts about your learning experience
+
+See [Contributing Guidelines](./docs/about/contributing.md) for details.
+
+---
+
+## How to Use This Project
+
+### As a Learning Course
+Follow the examples sequentially, completing all stages. Work through attack scenarios and read the security analyses. Estimated time for complete mastery: **50-60 hours**.
 
 ### As a Reference
-Jump to specific security topics or implementation patterns as needed.
+Jump to specific security topics as needed. Each documentation page and security analysis stands alone with full context.
 
-### As a Template
-Use Stage 3 implementations from any example as starting points for production systems.
+### As a Production Template
+Stage 3 implementations from any example provide production-ready starting points. Review the security analyses to understand the controls and adapt to your needs.
 
-### As a Security Audit Tool
-Review your code against the security concerns highlighted across examples.
-
-### As a Comparison Tool
-Compare how different security challenges are addressed across domains.
+### As Training Material
+The [presentation materials](./docs/presentations/index.md) are designed for team training, security reviews, and executive briefings. Includes slide decks, articles, and comprehensive checklists.
 
 ---
 
-## ⚖️ Legal & Ethical Considerations
+## License
 
-### Important Notes
-1. **Educational Purpose Only**: Code is intentionally simplified
-2. **Not Production-Ready**: Requires hardening for real use
-3. **No Warranty**: Use at your own risk
-4. **Security Disclosure**: Found a real vulnerability? Report responsibly
-
-### Responsible Use
-- Don't use vulnerable examples in production
-- Always implement proper security controls
-- Follow industry best practices
-- Obtain proper security reviews
-- Comply with applicable regulations (GDPR, HIPAA, etc.)
+This project is released under the **MIT License**. See [LICENSE](./LICENSE) for details.
 
 ---
 
-## 📬 Contact & Feedback
+## Production Use & Warranties
+
+### Educational Use Disclaimer
+
+⚠️ **Stage 1 and Stage 2 code contains intentional vulnerabilities for educational purposes.**
+
+**Critical Requirements**:
+- ❌ **DO NOT** deploy Stage 1 or Stage 2 code in production
+- ✅ **DO** use Stage 3+ implementations as production templates (with appropriate validation)
+- ✅ **DO** use this material for educational purposes
+- ✅ **DO** practice attacks only in isolated test environments
+
+### No Warranties - Your Responsibility
+
+**This project is provided "AS IS" under the MIT License with NO WARRANTIES of any kind.**
+
+If you choose to use Stage 3+ code as a foundation for production systems, you must:
+- Conduct independent security testing
+- Perform code reviews by qualified security professionals
+- Verify compliance with your regulatory requirements
+- Implement your own operational security procedures
+- Test thoroughly in your specific environment
+
+**The project maintainers assume NO responsibility or liability for production deployments.**
+
+📋 **[Read the complete disclaimer and production checklist →](./DISCLAIMER.md)**
+
+This comprehensive document covers:
+- Detailed warranty disclaimers
+- Your responsibilities for production use
+- Required security testing procedures
+- Compliance verification requirements
+- When to seek professional help
+
+---
+
+## Contact
 
 **Project Maintainer**: Robert Fischer  
-**Email**: robert@fischer3.org
-
-### Contributing
-
-While this is primarily an educational project, feedback and suggestions are welcome:
-- Report issues or unclear documentation
-- Suggest additional security topics to cover
-- Share your learning experiences
-- Propose new example scenarios
+**Email**: robert@fischer3.net  
+**Website**: [https://learn-a2a-security.fischer3.net](https://learn-a2a-security.fischer3.net)  
+**GitHub**: [https://github.com/fischer3-net/agentic-security-education](https://github.com/fischer3-net/agentic-security-education)
 
 ---
 
-## 📝 Version & Updates
+## Acknowledgments
 
-- **Current Version**: 2.0 (Expanded Edition)
-- **Last Updated**: December 2025
-- **Recent Updates**:
-  + ✨ Added Task Collaboration example with 5 stages (Dec 2025)
-  + ✨ Added comprehensive security documentation (Nov 2025)
-  + ✨ Created security analysis for all examples
-  + ✨ Added threat model and authentication guides
-  + ✨ Reorganized documentation structure
-- **Next Planned Update**: Q1 2025 (Advanced integration patterns)
-
-### Changelog
-
-**v2.0 (December 2025)**:
-- Added complete Task Collaboration example (5 stages)
-- Comprehensive session management teaching
-- Multi-agent coordination patterns
-- Distributed system patterns (Redis)
-- Web framework integration (Flask)
-- 25+ new vulnerabilities demonstrated
-- SessionManager reusable component
-
-**v1.0 (November 2025)**:
-- Initial release with 2 examples
-- Cryptocurrency and Credit Report agents
-- Complete security documentation
-- 50+ vulnerabilities across examples
+This project builds on and references:
+- The Model Context Protocol specification from Anthropic
+- OWASP security guidelines and best practices
+- CWE/CVSS vulnerability classification systems
+- Research on multi-agent systems security
+- Community feedback and contributions
 
 ---
 
-## 🙏 Acknowledgments
-
-This project builds upon:
-- The Model Context Protocol specification by Anthropic
-- The Agent2Agent protocol design
-- Community feedback and best practices
-- Real-world security incidents and lessons learned
-- Industry standards (OWASP, CWE, GDPR, HIPAA)
+**Last Updated**: January 2026  
+**Version**: 3.0  
+**Status**: Active Development
 
 ---
 
-## 📜 License
+<div align="center">
 
-This educational project is provided for learning purposes under the MIT License.  
-See individual files for specific licensing information.
+**Learn security by breaking it first, then building it right.**
 
----
+[Get Started →](./docs/index.md)
 
-## 🎯 Quick Navigation
-
-- 📖 [Documentation Index](./docs/a2a/INDEX.md)
-- 🚀 [A2A Overview](./docs/a2a/00_A2A_OVERVIEW.md)
-- 🔒 [Security Guide](./docs/a2a/03_SECURITY/05_code_walkthrough_comparison.md)
-- 💻 [Crypto Example](./examples/a2a_crypto_example/)
-- 💻 [Credit Report Example](./examples/a2a_credit_report_example/)
-- 💻 [Task Collaboration Example](./examples/a2a_task_collab_example/)
-- 💻 [Adversarial Agent Example](./examples/a2a_adversarial_agent_example/) ✨ NEW
-- 💻 [Task Collaboration Example](./examples/a2a_task_collab_example/)
-- 💻 [Adversarial Agent Example](./examples/a2a_adversarial_agent_example/) ✨ NEW
-- 📊 [Example Comparison](./examples/a2a_task_collab_example/task_collab_comparision.md)
----
-
-**Remember**: The journey from vulnerable to secure code is the learning path itself.  
-Take your time, understand each security concern, and practice implementing proper controls.
-
-**Four Examples. Complete Coverage. Production-Ready Patterns.**
-**Four Examples. Complete Coverage. Production-Ready Patterns.**
-**Happy Learning! 🚀🔐**
+</div>
