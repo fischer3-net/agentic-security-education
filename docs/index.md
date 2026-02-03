@@ -13,9 +13,9 @@
 </div>
 ---
 
-<img src="./images/logos/fischer3_logo.jpeg" width="150" height="150" />
-
 ## Welcome
+
+<img src="./images/logos/fischer3_logo.jpeg" width="100" height="100" />
 
 AI agents are no longer a concept on the horizon — they are here, and they are talking to each other. The Agent-to-Agent (A2A) protocol, the Model Context Protocol (MCP), and the systems that tie them together represent a new frontier in software architecture. With that frontier comes a new set of security challenges that most existing resources barely touch.
 
