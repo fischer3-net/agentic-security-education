@@ -18,6 +18,7 @@ copyright: |
 # Theme Configuration
 theme:
   name: material
+  logo: assets/fischer3_logo_scaled.png
   language: en
   palette:
     # Light mode
@@ -57,7 +58,7 @@ theme:
     - content.tabs.link
   icon:
     repo: fontawesome/brands/github
-    logo: material/robot
+    
 
 # Extra Configuration
 extra:
