@@ -18,10 +18,9 @@ Think of A2A as the "social protocol" for AI agents - it defines how agents:
 ### The 30-Second Version
 
 A2A handles **agent orchestration** - the "who" and "how" of multi-agent systems:
-
+---
 !["Agent Orchestration"](/docs/images/diagrams/agent_orchestration_30_second.jpg "Agent Orchestration")
 
----
 
 ## 🌟 Key Features
 
