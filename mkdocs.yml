@@ -211,10 +211,11 @@ nav:
           - Article: presentations/eight-layer-validation/article.md
           - Slides: presentations/eight-layer-validation/slides.md
           - Checklist: presentations/eight-layer-validation/checklist.md
-      - Agent Security Enhanced:
-          - Article: presentations/agent-security-enhanced/article.md
-          - Slides: presentations/agent-security-enhanced/slides.md
-          - Checklist: presentations/agent-security-enhanced/checklist.md
+          
+      - Adversarial Agents:
+          - Article: presentations/agent_security_article_enhanced/article.md
+          - Slides: presentations/agent_security_article_enhanced/slides.md
+          - Checklist: presentations/agent_security_article_enhanced/checklist.md
 
   - Supplementary:
     - Tools & Utilities: supplementary/tools/index.md
