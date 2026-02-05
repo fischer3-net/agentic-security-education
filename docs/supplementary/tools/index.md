@@ -213,7 +213,7 @@ pipx ensurepath
 
 1. **[UV Guide](./uv_guide.md)** - Dependency management
 2. **[Link Checker](../../utils/markdown_link_checker.py)** - Validate documentation
-3. **[Contributing Guidelines](../about/contributing.md)** - Contribution process
+3. **[Contributing Guidelines](../../about/contributing.md)** - Contribution process
 
 ---
 
@@ -301,9 +301,9 @@ git commit -m "Your changes"
 - **[Python Virtual Environments](https://docs.python.org/3/tutorial/venv.html)** - Python venv docs
 
 ### Project Documentation
-- **[Installation Guide](../guides/installation.md)** - Complete installation instructions
-- **[Quick Start](../guides/quickstart.md)** - Get running fast
-- **[A2A Documentation](../a2a/INDEX.md)** - Protocol documentation
+- **[Installation Guide](../../guides/installation.md)** - Complete installation instructions
+- **[Quick Start](../../guides/quickstart.md)** - Get running fast
+- **[A2A Documentation](../../index.md)** - Protocol documentation
 
 ### Related Tools
 - **[MCP Examples](../../mcp_examples/)** - MCP server examples
@@ -319,7 +319,7 @@ Found a bug in these tools? Have a suggestion for improvement?
 2. **Tool enhancements**: Submit improvements via pull request
 3. **New tools**: Propose in [GitHub Discussions](https://github.com/fischer3-net/agentic-security-education/discussions)
 
-See **[Contributing Guidelines](../about/contributing.md)** for details.
+See **[Contributing Guidelines](../../about/contributing.md)** for details.
 
 ---
 
@@ -335,7 +335,7 @@ See **[Contributing Guidelines](../about/contributing.md)** for details.
 - See **[Fix Links Guide](../../utils/fix_markdown_links_guide.md)**
 
 **For general setup**:
-- See **[Installation Guide](../guides/installation.md)**
+- See **[Installation Guide](../../guides/installation.md)**
 - Ubuntu users: **[Ubuntu Quickstart](./UBUNTU_QUICKSTART.md)**
 
 **Still stuck?**

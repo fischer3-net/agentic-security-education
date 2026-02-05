@@ -743,7 +743,7 @@ Now that you understand authentication fundamentals, continue to:
 ---
 
 **This project provides education only, not production support or security guarantees.** 
-> 📋 [Read Full Disclaimer](/DISCLAIMER.md) before using any code in production.
+> 📋 [Read Full Disclaimer](../../DISCLAIMER.md) before using any code in production.
 
 **Navigation**  
 ← Previous: [Communication: Error Handling](../04_COMMUNICATION/03_error_handling.md) | Next: [Authentication Tags](./02_authentication_tags.md) →  

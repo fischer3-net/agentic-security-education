@@ -43,7 +43,7 @@ This isn't toy code. Every module:
 Nothing in this repository should be considered production-ready or production-quality.  
 All code examples are deliberately simplified to illustrate concepts and security concerns.
 
-> **⚠️ Production Use Warning**: Stage 3+ code demonstrates production-quality patterns but requires independent security testing, code review, and validation before production deployment. No warranties provided. See [DISCLAIMER.md](/DISCLAIMER.md).
+> **⚠️ Production Use Warning**: Stage 3+ code demonstrates production-quality patterns but requires independent security testing, code review, and validation before production deployment. No warranties provided. See [DISCLAIMER.md](../DISCLAIMER.md).
 ---
 
 ## 📚 What's Included
