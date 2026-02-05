@@ -19,21 +19,7 @@ Think of A2A as the "social protocol" for AI agents - it defines how agents:
 
 A2A handles **agent orchestration** - the "who" and "how" of multi-agent systems:
 
-```
-User asks: "What's the Bitcoin price trend?"
-              │
-              ▼
-    ┌──────────────────┐
-    │  Orchestrator    │ ◄─── A2A Protocol
-    │     Agent        │      (Discovery, Identity,
-    └────────┬─────────┘       Authentication)
-             │
-    ┌────────┼────────┐
-    │        │        │
-    ▼        ▼        ▼
- [Crypto] [Chart] [Analysis]
-  Agent    Agent    Agent
-```
+!["Agent Orchestration"](/docs/images/diagrams/agent_orchestration_30_second.jpg "Agent Orchestration")
 
 ---
 

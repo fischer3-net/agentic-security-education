@@ -53,6 +53,18 @@ pip install uv --break-system-packages
 | Install from pyproject | `uv pip install -e .` |
 | Install with extras | `uv pip install -e ".[dev]"` |
 
+# Project Examples
+
+## Project-Specific Packages
+  
+  | Purpose | Packages |
+  |---------|----------|
+  | A2A Stage 3 | `uv pip install cryptography PyJWT bcrypt` |
+  | MCP Development | `uv pip install mcp httpx pydantic` |
+  | Task Collab Stage 4 | `uv pip install redis flask` |
+  | Documentation | `uv pip install mkdocs-material` |
+
+
 ## Common Workflows
 
 ### New Project

@@ -211,11 +211,15 @@ nav:
           - Article: presentations/eight-layer-validation/article.md
           - Slides: presentations/eight-layer-validation/slides.md
           - Checklist: presentations/eight-layer-validation/checklist.md
-          
+      - Agent Security Enhanced:
+          - Article: presentations/agent-security-enhanced/article.md
+          - Slides: presentations/agent-security-enhanced/slides.md
+          - Checklist: presentations/agent-security-enhanced/checklist.md
+
   - Supplementary:
-    - Tools & Utilities: supplementary/index.md
-    - UV Package Manager: supplementary/tools/uv-guide.md
-    - Link Checker: supplementary/tools/link-checker.md
+    - Tools & Utilities: supplementary/tools/index.md
+    - UV Package Manager: supplementary/tools/UV_COMPLETE_GUIDE.md
+    - Ubuntu Quickstart: supplementary/tools/UBUNTU_QUICKSTART.md
   
   - About:
     - Project Info: about/index.md

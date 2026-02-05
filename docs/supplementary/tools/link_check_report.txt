@@ -1,0 +1,235 @@
+================================================================================
+MARKDOWN LINK CHECKER - DETAILED REPORT
+================================================================================
+
+📊 SUMMARY
+--------------------------------------------------------------------------------
+Total markdown files scanned: 6
+Total links found: 59
+  ✓ Working links: 33
+  ✗ Broken links: 22
+  ⚠ External links (not checked): 4
+
+================================================================================
+🔴 BROKEN LINKS WITH FIX SUGGESTIONS
+================================================================================
+
+📄 File: UV_COMPLETE_GUIDE.md
+--------------------------------------------------------------------------------
+
+  ❌ Line 527: [Running Examples](../../guides/running-examples.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/guides/running-examples.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (index.md)
+           File: index.md
+           Match: 52%
+
+  ❌ Line 531: [MCP Examples](../../mcp_examples/)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/mcp_examples
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+
+📄 File: index.md
+--------------------------------------------------------------------------------
+
+  ❌ Line 121: [markdown_link_checker.py](../../utils/markdown_link_checker.py)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/markdown_link_checker.py
+
+     💡 SUGGESTED FIXES:
+        1. Use: (link_check_report.txt)
+           File: link_check_report.txt
+           Match: 58%
+
+  ❌ Line 128: [check_markdown_links.py](../../utils/check_markdown_links.py)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/check_markdown_links.py
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 129: [fix_markdown_links.py](../../utils/fix_markdown_links.py)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/fix_markdown_links.py
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 132: [Link Checker README](../../utils/README_LINK_CHECKER.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/README_LINK_CHECKER.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (link_check_report.txt)
+           File: link_check_report.txt
+           Match: 60%
+
+  ❌ Line 133: [Fix Links Guide](../../utils/fix_markdown_links_guide.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/fix_markdown_links_guide.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (UV_COMPLETE_GUIDE.md)
+           File: UV_COMPLETE_GUIDE.md
+           Match: 51%
+
+  ❌ Line 170: [MCP Testing on Ubuntu](../../mcp_examples/your_first_mcp_server/MCP_TESTING_UBUNTU.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/mcp_examples/your_first_mcp_server/MCP_TESTING_UBUNTU.md
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 188: [MCP Testing Ubuntu Guide](../../mcp_examples/your_first_mcp_server/MCP_TESTING_UBUNTU.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/mcp_examples/your_first_mcp_server/MCP_TESTING_UBUNTU.md
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 208: [Markdown Link Checker](../../utils/markdown_link_checker.py)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/markdown_link_checker.py
+
+     💡 SUGGESTED FIXES:
+        1. Use: (link_check_report.txt)
+           File: link_check_report.txt
+           Match: 58%
+
+  ❌ Line 209: [Fix Markdown Links](../../utils/fix_markdown_links.py)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/fix_markdown_links.py
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 210: [Link Checker README](../../utils/README_LINK_CHECKER.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/README_LINK_CHECKER.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (link_check_report.txt)
+           File: link_check_report.txt
+           Match: 60%
+
+  ❌ Line 215: [Link Checker](../../utils/markdown_link_checker.py)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/markdown_link_checker.py
+
+     💡 SUGGESTED FIXES:
+        1. Use: (link_check_report.txt)
+           File: link_check_report.txt
+           Match: 58%
+
+  ❌ Line 216: [Contributing Guidelines](../about/contributing.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/supplementary/about/contributing.md
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 304: [Installation Guide](../guides/installation.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/supplementary/guides/installation.md
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 305: [Quick Start](../guides/quickstart.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/supplementary/guides/quickstart.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (UBUNTU_QUICKSTART.md)
+           File: UBUNTU_QUICKSTART.md
+           Match: 79%
+        2. Use: (UV_QUICK_CARD.txt)
+           File: UV_QUICK_CARD.txt
+           Match: 53%
+
+  ❌ Line 306: [A2A Documentation](../a2a/INDEX.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/supplementary/a2a/INDEX.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (index.md)
+           File: index.md
+           Match: 100%
+        2. Use: (uv_guide.md)
+           File: uv_guide.md
+           Match: 63%
+
+  ❌ Line 309: [MCP Examples](../../mcp_examples/)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/mcp_examples
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 322: [Contributing Guidelines](../about/contributing.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/supplementary/about/contributing.md
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+  ❌ Line 334: [Link Checker README](../../utils/README_LINK_CHECKER.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/README_LINK_CHECKER.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (link_check_report.txt)
+           File: link_check_report.txt
+           Match: 60%
+
+  ❌ Line 335: [Fix Links Guide](../../utils/fix_markdown_links_guide.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/utils/fix_markdown_links_guide.md
+
+     💡 SUGGESTED FIXES:
+        1. Use: (UV_COMPLETE_GUIDE.md)
+           File: UV_COMPLETE_GUIDE.md
+           Match: 51%
+
+  ❌ Line 338: [Installation Guide](../guides/installation.md)
+     Reason: File not found
+     Attempted: /home/robert/Documents/python_projects/courses/fischer3_a2a_introduction/docs/supplementary/guides/installation.md
+
+     💡 ACTIONS:
+        • Create the missing file
+        • Remove the broken link
+        • Update to correct path
+
+
+================================================================================
+🌐 EXTERNAL LINKS (NOT VERIFIED)
+================================================================================
+
+ℹ️  These links require network access to verify.
+
+📄 index.md: 4 external link(s)

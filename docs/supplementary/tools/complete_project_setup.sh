@@ -6,7 +6,7 @@
 set -e  # Exit on error
 
 echo "╔════════════════════════════════════════════╗"
-echo "║   Python Project Setup with UV Demo       ║"
+echo "║   Python Project Setup with UV Demo        ║"
 echo "╚════════════════════════════════════════════╝"
 echo ""
 

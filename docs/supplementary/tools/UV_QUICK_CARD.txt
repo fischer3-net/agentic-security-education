@@ -1,8 +1,18 @@
-╔══════════════════════════════════════════════════════════════════════════╗
-║                      UV Quick Reference Card                             ║
-║                   Fast Python Package Manager                            ║
-╚══════════════════════════════════════════════════════════════════════════╝
-
+╔════════════════════════════════════════════════╗
+║  UV QUICK REFERENCE - Agentic AI Security      ║
+║  Fast Python package management for A2A/MCP    ║
+╚════════════════════════════════════════════════╝
+  
+  📁 PROJECT EXAMPLES
+  ─────────────────────────────────────────────────────
+  cd examples/a2a_crypto_example
+  uv venv && source .venv/bin/activate
+  uv pip install cryptography PyJWT bcrypt
+  
+  cd examples/a2a_task_collab_example/stage1_insecure
+  uv venv && source .venv/bin/activate
+  python server/task_coordinator.py
+  
 ┌─────────────────────────────────────────────────────────────────────────┐
 │ INSTALLATION                                                            │
 └─────────────────────────────────────────────────────────────────────────┘

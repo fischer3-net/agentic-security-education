@@ -1,7 +1,11 @@
 #!/bin/bash
-
-# Complete Example: Setting up MCP Server with UV
-# This script demonstrates a full workflow using uv
+# UV Setup Demo Script
+# 
+# This creates a demo MCP server project
+# For real examples, see:
+#   - examples/a2a_crypto_example/
+#   - examples/a2a_task_collab_example/
+#   - mcp_examples/your_first_mcp_server/
 
 echo "=========================================="
 echo "MCP Server Setup with UV"
