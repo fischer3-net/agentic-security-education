@@ -1,0 +1,108 @@
+version: '3.8'
+
+services:
+  # Main demo service
+  federated-identity-stage1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: federated-identity-stage1
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python naive_agents.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - federated-network
+
+  # Exploit runner services (optional - can run individually)
+  confused-deputy-exploit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: confused-deputy-exploit
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python exploits/confused_deputy.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - federated-network
+    profiles:
+      - exploits
+
+  token-replay-exploit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: token-replay-exploit
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python exploits/token_replay.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - federated-network
+    profiles:
+      - exploits
+
+  scope-escalation-exploit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: scope-escalation-exploit
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python exploits/scope_escalation.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - federated-network
+    profiles:
+      - exploits
+
+  audit-evasion-exploit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: audit-evasion-exploit
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python exploits/audit_evasion.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - federated-network
+    profiles:
+      - exploits
+
+networks:
+  federated-network:
+    driver: bridge
+
+# Usage:
+# ------
+# 
+# Run main demo:
+#   docker-compose up federated-identity-stage1
+#
+# Run all exploits:
+#   docker-compose --profile exploits up
+#
+# Run specific exploit:
+#   docker-compose run confused-deputy-exploit
+#   docker-compose run token-replay-exploit
+#   docker-compose run scope-escalation-exploit
+#   docker-compose run audit-evasion-exploit
+#
+# Build images:
+#   docker-compose build
+#
+# Clean up:
+#   docker-compose down
+#   docker-compose down -v  # Also remove volumes

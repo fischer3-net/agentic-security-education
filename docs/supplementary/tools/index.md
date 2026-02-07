@@ -339,7 +339,7 @@ See **[Contributing Guidelines](../../about/contributing.md)** for details.
 - Ubuntu users: **[Ubuntu Quickstart](./UBUNTU_QUICKSTART.md)**
 
 **Still stuck?**
-- Email: robert@fischer3.net
+- Email: robert@fischer3.org
 - GitHub: [Open an issue](https://github.com/fischer3-net/agentic-security-education/issues)
 
 ---
