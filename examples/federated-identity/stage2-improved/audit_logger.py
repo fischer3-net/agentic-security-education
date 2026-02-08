@@ -232,7 +232,7 @@ class AuditLogger:
         """
         event = AuditEvent(
             event_id=str(uuid.uuid4()),
-            timestamp=datetime.new(timezone.utc).isoformat(),
+            timestamp=datetime.now(timezone.utc).isoformat(),
             event_type="data_access",
             correlation_id=correlation_id,
             actor=user,

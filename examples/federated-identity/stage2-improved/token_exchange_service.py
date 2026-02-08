@@ -23,7 +23,7 @@ This is BETTER than Stage 1, but still NOT production-ready!
 
 import jwt
 import uuid
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Dict, Any, Optional, List
 from dataclasses import dataclass, field
 
@@ -207,16 +207,18 @@ class TokenExchangeService:
         REMAINING ISSUE: No replay protection, no revocation check.
         """
         try:
+            # Disable automatic audience verification - we handle it ourselves
             payload = jwt.decode(
                 token,
                 self.SECRET_KEY,
-                algorithms=[self.ALGORITHM]
+                algorithms=[self.ALGORITHM],
+                options={"verify_aud": False}  # Don't auto-verify audience
             )
             
             # IMPROVEMENT: Check token hasn't expired
             if 'exp' in payload:
-                exp = datetime.fromtimestamp(payload['exp'])
-                if exp < datetime.utcnow():
+                exp = datetime.fromtimestamp(payload['exp'], tz=timezone.utc)
+                if exp < datetime.now(timezone.utc):
                     raise ValueError("Token expired")
             
             # VULNERABILITY: No nonce/jti check (replay attacks possible)
@@ -302,7 +304,7 @@ class TokenExchangeService:
         - No nonce/jti
         - No proof-of-possession binding
         """
-        now = datetime.utcnow()
+        now = datetime.now(timezone.utc)
         expiration = now + timedelta(minutes=self.DEFAULT_EXPIRATION_MINUTES)
         
         payload = {
@@ -331,10 +333,12 @@ class TokenExchangeService:
         REMAINING ISSUE: Audience check is optional (should be required).
         """
         try:
+            # Disable automatic audience verification - we handle it ourselves
             payload = jwt.decode(
                 token,
                 self.SECRET_KEY,
-                algorithms=[self.ALGORITHM]
+                algorithms=[self.ALGORITHM],
+                options={"verify_aud": False}  # Don't auto-verify audience
             )
             
             # IMPROVEMENT: Validate audience if provided
@@ -367,12 +371,13 @@ def demo_token_exchange():
     
     # Create initial token (simulating Stage 1 style token)
     print("1️⃣  Creating initial token (Stage 1 style)...")
+    now = datetime.now(timezone.utc)
     initial_payload = {
         "sub": "dr.williams@university.edu",
         "org": "University Hospital",
         "scope": ["research:read", "research:write", "admin:projects"],
-        "iat": datetime.utcnow(),
-        "exp": datetime.utcnow() + timedelta(hours=1)
+        "iat": now,
+        "exp": now + timedelta(hours=1)
     }
     
     initial_token = jwt.encode(
