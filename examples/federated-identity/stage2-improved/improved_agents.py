@@ -22,6 +22,7 @@ that "better" doesn't mean "secure enough" for production.
 
 import asyncio
 import uuid
+
 from typing import Dict, Any, Optional
 from dataclasses import dataclass, field
 
@@ -532,15 +533,15 @@ async def demo_improved_flow():
     
     # Create initial token
     import jwt
-    from datetime import datetime, timedelta
+    from datetime import datetime, timedelta, timezone
     
     initial_payload = {
         "sub": "dr.thompson@university.edu",
         "org": "University Hospital",
         "scope": ["research:read", "research:write", "admin:projects"],
         "lineage": ["dr.thompson@university.edu"],
-        "iat": datetime.utcnow(),
-        "exp": datetime.utcnow() + timedelta(hours=1)
+        "iat": datetime.now(timezone.utc),
+        "exp": datetime.now(timezone.utc) + timedelta(hours=1)
     }
     
     user_token = jwt.encode(
@@ -594,7 +595,7 @@ async def demo_malicious_attempt():
     
     # Create a token for Agent C
     import jwt
-    from datetime import datetime, timedelta
+    from datetime import datetime, timedelta, timezone as datetime_timezone 
     
     token_payload = {
         "sub": "researcher@university.edu",
@@ -602,8 +603,8 @@ async def demo_malicious_attempt():
         "aud": "Agent C (Pharma)",  # IMPROVEMENT: Audience restricted
         "scope": ["research:read"],  # IMPROVEMENT: Limited scope
         "lineage": ["researcher@university.edu", "Agent A", "Agent B"],
-        "iat": datetime.utcnow(),
-        "exp": datetime.utcnow() + timedelta(minutes=15)
+        "iat": datetime.now(datetime_timezone.utc),
+        "exp": datetime.now(datetime_timezone.utc) + timedelta(minutes=15)
     }
     
     token = jwt.encode(

@@ -21,7 +21,7 @@ REMAINING VULNERABILITIES:
 import hashlib
 import json
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any, Optional, List
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
@@ -130,7 +130,7 @@ class AuditLogger:
         """
         event = AuditEvent(
             event_id=str(uuid.uuid4()),
-            timestamp=datetime.utcnow().isoformat(),
+            timestamp=datetime.now(timezone.utc).isoformat(),
             event_type="token_exchange",
             correlation_id=correlation_id,
             actor=actor,
@@ -167,7 +167,7 @@ class AuditLogger:
         """
         event = AuditEvent(
             event_id=str(uuid.uuid4()),
-            timestamp=datetime.utcnow().isoformat(),
+            timestamp=datetime.now(timezone.utc).isoformat(),
             event_type="agent_request",
             correlation_id=correlation_id,
             actor=from_agent,
@@ -198,7 +198,7 @@ class AuditLogger:
         """
         event = AuditEvent(
             event_id=str(uuid.uuid4()),
-            timestamp=datetime.utcnow().isoformat(),
+            timestamp=datetime.now(timezone.utc).isoformat(),
             event_type="authentication",
             correlation_id=correlation_id,
             actor=user,
@@ -232,7 +232,7 @@ class AuditLogger:
         """
         event = AuditEvent(
             event_id=str(uuid.uuid4()),
-            timestamp=datetime.utcnow().isoformat(),
+            timestamp=datetime.new(timezone.utc).isoformat(),
             event_type="data_access",
             correlation_id=correlation_id,
             actor=user,

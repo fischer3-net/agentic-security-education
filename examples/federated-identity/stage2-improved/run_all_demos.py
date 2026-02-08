@@ -16,8 +16,6 @@ import asyncio
 import subprocess
 import sys
 from pathlib import Path
-
-
 class Stage2DemoRunner:
     """Runs all Stage 2 demonstrations in sequence."""
     
@@ -90,6 +88,7 @@ class Stage2DemoRunner:
         self.print_demo_header(demo_num, demo)
         
         script_path = self.stage2_dir / demo['script']
+        print(f"Running script: {script_path}")
         
         if not script_path.exists():
             print(f"❌ ERROR: Script not found: {script_path}")

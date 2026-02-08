@@ -75,7 +75,7 @@ class InsecureTokenGenerator:
             metadata = {}
         
         # VULNERABILITY 4: 24-hour expiration
-        expiration = datetime.datetime.utcnow() + datetime.timedelta(hours=24)
+        expiration = datetime.datetime.now(datetime.UTC) + datetime.timedelta(hours=24)
         
         payload = {
             "sub": user_id,
@@ -85,7 +85,7 @@ class InsecureTokenGenerator:
             # Should have: "aud": "specific-service"
             # VULNERABILITY 6: No nonce/jti
             # Should have: "jti": unique_id
-            "iat": datetime.datetime.utcnow(),
+            "iat": datetime.datetime.now(datetime.UTC),
             "exp": expiration,
             **metadata
         }
