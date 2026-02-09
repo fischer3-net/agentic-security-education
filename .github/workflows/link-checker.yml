@@ -1,0 +1,134 @@
+name: Check Documentation Links
+
+on:
+  pull_request:
+    paths:
+      - '**.md'
+      - 'docs/**'
+      - 'examples/**/README.md'
+  schedule:
+    # Run weekly on Mondays at 9am UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Check links in documentation
+        uses: lycheeverse/lychee-action@v1
+        with:
+          # Check all markdown files
+          args: |
+            --verbose 
+            --no-progress 
+            --exclude-path './node_modules'
+            --exclude-path './.github'
+            --exclude 'localhost'
+            --exclude '127.0.0.1'
+            --exclude 'example.com'
+            --exclude 'mailto:'
+            --max-retries 3
+            --timeout 20
+            '**/*.md'
+          
+          # Fail action on broken links
+          fail: true
+          
+      - name: Create issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = '🔗 Broken Links Found in Documentation';
+            const body = `
+            ## Broken Links Detected
+            
+            The automated link checker has found broken links in the documentation.
+            
+            **Triggered by**: ${{ github.event_name }}
+            **Branch**: ${{ github.ref }}
+            **Commit**: ${{ github.sha }}
+            
+            ### Action Required
+            1. Review the workflow logs for details
+            2. Fix or remove broken links
+            3. Update any outdated URLs
+            4. Consider adding redirects for moved content
+            
+            ### Workflow Run
+            [View Details](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            
+            ---
+            
+            *This issue was automatically created by the link checker workflow.*
+            `;
+            
+            // Check if issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['broken-links', 'documentation']
+            });
+            
+            if (issues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['broken-links', 'documentation', 'automated']
+              });
+            }
+
+  markdown-lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Lint markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v15
+        with:
+          globs: |
+            **/*.md
+            !node_modules/**
+            !.github/**
+          
+          # Custom configuration
+          config: |
+            {
+              "default": true,
+              "MD013": false,
+              "MD033": false,
+              "MD041": false
+            }
+          
+      - name: Comment on PR if lint fails
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `## ⚠️ Markdown Lint Failures
+              
+              Your markdown files have some formatting issues. Please review the workflow logs and fix the issues.
+              
+              Common issues:
+              - Missing blank lines around headers
+              - Inconsistent list formatting
+              - Long lines (consider rewrapping)
+              - Missing language specifiers in code blocks
+              
+              [View Details](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+              `
+            });
