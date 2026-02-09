@@ -1,0 +1,116 @@
+name: PR Labeler
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Label PR based on changed files
+        uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yml
+
+      - name: Add size label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const additions = pr.additions;
+            const deletions = pr.deletions;
+            const total = additions + deletions;
+            
+            let sizeLabel = '';
+            if (total < 10) {
+              sizeLabel = 'size/XS';
+            } else if (total < 50) {
+              sizeLabel = 'size/S';
+            } else if (total < 200) {
+              sizeLabel = 'size/M';
+            } else if (total < 500) {
+              sizeLabel = 'size/L';
+            } else {
+              sizeLabel = 'size/XL';
+            }
+            
+            // Remove old size labels
+            const currentLabels = pr.labels.map(label => label.name);
+            const sizeLabels = currentLabels.filter(label => label.startsWith('size/'));
+            
+            for (const oldLabel of sizeLabels) {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                name: oldLabel
+              });
+            }
+            
+            // Add new size label
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              labels: [sizeLabel]
+            });
+
+      - name: Check for breaking changes
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const body = pr.body || '';
+            const title = pr.title || '';
+            
+            const hasBreakingChange = 
+              body.toLowerCase().includes('breaking change') ||
+              title.toLowerCase().includes('breaking') ||
+              title.startsWith('!') ||
+              body.includes('BREAKING CHANGE:');
+            
+            if (hasBreakingChange) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                labels: ['breaking-change']
+              });
+            }
+
+      - name: Check for security changes
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const body = pr.body || '';
+            const title = pr.title || '';
+            
+            const keywords = [
+              'security', 'vulnerability', 'cve', 'cwe', 
+              'exploit', 'patch', 'authentication', 'authorization',
+              'injection', 'xss', 'csrf', 'session'
+            ];
+            
+            const hasSecurity = keywords.some(keyword => 
+              title.toLowerCase().includes(keyword) ||
+              body.toLowerCase().includes(keyword)
+            );
+            
+            if (hasSecurity) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                labels: ['security']
+              });
+            }
