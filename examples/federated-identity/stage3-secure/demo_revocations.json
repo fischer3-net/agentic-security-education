@@ -1,0 +1,296 @@
+[
+  {
+    "jti": "sKU2m5ZiBaw_m9RFq--Bcg",
+    "revoked_at": "2026-02-10T03:13:58.128701+00:00",
+    "reason": "Token stolen - detected in attacker's traffic",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:28:58.128649+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001",
+      "detected_by": "IDS",
+      "ip_address": "203.0.113.42"
+    }
+  },
+  {
+    "jti": "uMBnhcUugYShErc_ynm8cw",
+    "revoked_at": "2026-02-10T03:13:58.129209+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:28:58.129197+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "dbrDi8d_O63ouWIHGfU90g",
+    "revoked_at": "2026-02-10T03:13:58.136543+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:28:58.129201+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "NTKDhPqa8xQYFnatdu8xbQ",
+    "revoked_at": "2026-02-10T03:13:58.137195+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:28:58.129203+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "C1A--vM-yYSCrL7ugV9mmw",
+    "revoked_at": "2026-02-10T03:17:13.092324+00:00",
+    "reason": "Token stolen - detected in attacker's traffic",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:32:13.092289+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001",
+      "detected_by": "IDS",
+      "ip_address": "203.0.113.42"
+    }
+  },
+  {
+    "jti": "IdPdyK5sa6BLD_fHIabWAQ",
+    "revoked_at": "2026-02-10T03:17:13.092694+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:32:13.092682+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "tQZrthCUabvlq2UWV-ZHpA",
+    "revoked_at": "2026-02-10T03:17:13.100025+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:32:13.092685+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "XCv_T-eEZrjf6vdsOtktQw",
+    "revoked_at": "2026-02-10T03:17:13.100507+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:32:13.092687+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "bOg0cTRMSheB4fqqFh77vw",
+    "revoked_at": "2026-02-10T03:18:43.316813+00:00",
+    "reason": "Token stolen - detected in attacker's traffic",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:33:43.316764+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001",
+      "detected_by": "IDS",
+      "ip_address": "203.0.113.42"
+    }
+  },
+  {
+    "jti": "-9-JuNhUykoUkpR4l1wMmg",
+    "revoked_at": "2026-02-10T03:18:43.317298+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:33:43.317286+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "QFGSdwxt5-GBBcRe7m5bJA",
+    "revoked_at": "2026-02-10T03:18:43.324597+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:33:43.317291+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "ENbP1eGRf_h9XFtHCOehsg",
+    "revoked_at": "2026-02-10T03:18:43.326058+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:33:43.317292+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "C5yLczd6nlvWlp2LW6HYXA",
+    "revoked_at": "2026-02-10T03:19:49.771589+00:00",
+    "reason": "Token stolen - detected in attacker's traffic",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:34:49.771539+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001",
+      "detected_by": "IDS",
+      "ip_address": "203.0.113.42"
+    }
+  },
+  {
+    "jti": "zvo6jZJf6vOY_8BHOkOAVA",
+    "revoked_at": "2026-02-10T03:19:49.772061+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:34:49.772050+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "ncY659F18EYUBRl7lhndKw",
+    "revoked_at": "2026-02-10T03:19:49.779396+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:34:49.772054+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "SVlzQsfIc4VUbmaejbTKsw",
+    "revoked_at": "2026-02-10T03:19:49.779932+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:34:49.772056+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "1rYsjSF1r5nFWyU557cgkw",
+    "revoked_at": "2026-02-10T03:20:33.549779+00:00",
+    "reason": "Token stolen - detected in attacker's traffic",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:35:33.549731+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001",
+      "detected_by": "IDS",
+      "ip_address": "203.0.113.42"
+    }
+  },
+  {
+    "jti": "s8kuxeSSbUG3HFWGI-zuvw",
+    "revoked_at": "2026-02-10T03:20:33.550294+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:35:33.550282+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "BdL-LDQOYRBVoFjOz93tCw",
+    "revoked_at": "2026-02-10T03:20:33.557605+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:35:33.550287+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "9h58HNl_l7IrS30As-IYyA",
+    "revoked_at": "2026-02-10T03:20:33.558312+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:35:33.550289+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "CUK0D730-XP2nqN8LNn7ow",
+    "revoked_at": "2026-02-10T03:21:07.981051+00:00",
+    "reason": "Token stolen - detected in attacker's traffic",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:07.980970+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001",
+      "detected_by": "IDS",
+      "ip_address": "203.0.113.42"
+    }
+  },
+  {
+    "jti": "6xujJSYLZ6wbzUJ4fCl9GQ",
+    "revoked_at": "2026-02-10T03:21:07.981605+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:07.981582+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "OdPMBBUhWFbH1_KhDY-B-Q",
+    "revoked_at": "2026-02-10T03:21:07.988827+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:07.981588+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "2o_T5GiUD-7VNoLvxJ3FyQ",
+    "revoked_at": "2026-02-10T03:21:07.989207+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:07.981595+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "y-gTFOHZ_ijtqSqYeRQxog",
+    "revoked_at": "2026-02-10T03:21:56.347637+00:00",
+    "reason": "Token stolen - detected in attacker's traffic",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:56.347605+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001",
+      "detected_by": "IDS",
+      "ip_address": "203.0.113.42"
+    }
+  },
+  {
+    "jti": "X4voRFEFjvL7BWMbGGdQIA",
+    "revoked_at": "2026-02-10T03:21:56.348062+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:56.348053+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "GzB7nxPFKYHM3Rig_iURlA",
+    "revoked_at": "2026-02-10T03:21:56.355404+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:56.348056+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  },
+  {
+    "jti": "UqLx-JP_WwKvCMO-oPJh8Q",
+    "revoked_at": "2026-02-10T03:21:56.355968+00:00",
+    "reason": "Account credentials compromised (user: researcher@university.edu)",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:56.348058+00:00",
+    "metadata": {
+      "user_id": "researcher@university.edu"
+    }
+  }
+]

@@ -73,7 +73,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
-              labels: ['broken-links', 'documentation']
+              labels: 'broken-links,documentation'
             });
             
             if (issues.data.length === 0) {

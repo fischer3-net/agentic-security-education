@@ -1,0 +1,24 @@
+# Stage 3 - Federated Identity Example - Secure Implementation
+# Python dependencies
+
+# JWT handling
+PyJWT==2.8.0
+
+# Cryptography for asymmetric keys and DPoP
+cryptography==41.0.7
+
+# Async support
+asyncio==3.4.3
+
+# Data classes (Python 3.7+ has this built-in)
+dataclasses==0.6; python_version < '3.7'
+
+# Optional: For pretty printing
+rich==13.7.0
+colorama==0.4.6
+
+# Development/testing dependencies
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.12.1
+mypy==1.7.1

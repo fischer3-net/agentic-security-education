@@ -1,0 +1,52 @@
+[
+  {
+    "jti": "LAh1jZ4u3c3LzWjspvmDyF5nDNnj2GJpfGGN-lYxH5A",
+    "revoked_at": "2026-02-10T03:19:00.586878+00:00",
+    "reason": "Suspicious activity detected",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:33:54+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001"
+    }
+  },
+  {
+    "jti": "YXDo-i_sHt-c9jhWt1CnsmSQFOtFGKLev3esMCn2N-g",
+    "revoked_at": "2026-02-10T03:20:00.795948+00:00",
+    "reason": "Suspicious activity detected",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:34:56+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001"
+    }
+  },
+  {
+    "jti": "VAXk6DoH3bfgAsVFAuDHceyduWkjyUGT9_lxh9UrqIE",
+    "revoked_at": "2026-02-10T03:20:41.789080+00:00",
+    "reason": "Suspicious activity detected",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:35:39+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001"
+    }
+  },
+  {
+    "jti": "I-PSfcbQq977wKaSj8xm6r7PrIFm8X9mI0MhIA9VH4k",
+    "revoked_at": "2026-02-10T03:21:19.829746+00:00",
+    "reason": "Suspicious activity detected",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:36:16+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001"
+    }
+  },
+  {
+    "jti": "ZvnSrMTRI8C8GAEMIPs43Cz0-0noNfPCcXu00p5uchg",
+    "revoked_at": "2026-02-10T03:22:03.348758+00:00",
+    "reason": "Suspicious activity detected",
+    "revoked_by": "security_team",
+    "expires_at": "2026-02-10T03:37:00+00:00",
+    "metadata": {
+      "incident_id": "INC-2025-001"
+    }
+  }
+]
