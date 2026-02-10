@@ -1,0 +1,152 @@
+╔════════════════════════════════════════════════╗
+║  UV QUICK REFERENCE - Agentic AI Security      ║
+║  Fast Python package management for A2A/MCP    ║
+╚════════════════════════════════════════════════╝
+  
+  📁 PROJECT EXAMPLES
+  ─────────────────────────────────────────────────────
+  cd examples/a2a_crypto_example
+  uv venv && source .venv/bin/activate
+  uv pip install cryptography PyJWT bcrypt
+  
+  cd examples/a2a_task_collab_example/stage1_insecure
+  uv venv && source .venv/bin/activate
+  python server/task_coordinator.py
+  
+┌─────────────────────────────────────────────────────────────────────────┐
+│ INSTALLATION                                                            │
+└─────────────────────────────────────────────────────────────────────────┘
+  pip install uv --break-system-packages
+  uv --version
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ VIRTUAL ENVIRONMENTS                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+  uv venv                        # Create venv in .venv/
+  uv venv myenv                  # Create with custom name
+  uv venv --python 3.12          # Specify Python version
+  
+  source .venv/bin/activate      # Activate (Linux/Mac)
+  deactivate                     # Deactivate
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ PACKAGE INSTALLATION                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+  uv pip install requests                    # Single package
+  uv pip install requests pandas numpy       # Multiple packages
+  uv pip install requests==2.31.0            # Specific version
+  uv pip install "requests>=2.28,<3.0"       # Version range
+  uv pip install -r requirements.txt         # From file
+  uv pip install -e .                        # Editable install
+  uv pip install -e ".[dev]"                 # With extras
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ PACKAGE MANAGEMENT                                                      │
+└─────────────────────────────────────────────────────────────────────────┘
+  uv pip list                    # List all packages
+  uv pip list --outdated         # Show outdated packages
+  uv pip show requests           # Package details
+  uv pip freeze                  # Show installed with versions
+  uv pip freeze > requirements.txt          # Save to file
+  uv pip uninstall requests                 # Remove package
+  uv pip install --upgrade requests         # Upgrade package
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ REQUIREMENTS FILES                                                      │
+└─────────────────────────────────────────────────────────────────────────┘
+  uv pip compile requirements.in -o requirements.txt    # Lock deps
+  uv pip sync requirements.txt                          # Exact sync
+  uv pip install -r requirements.txt                    # Install
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ COMMON WORKFLOWS                                                        │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  🆕 NEW PROJECT
+  ─────────────────────────────────────────────────────────────
+  mkdir myproject && cd myproject
+  uv venv
+  source .venv/bin/activate
+  uv pip install requests pandas
+  uv pip freeze > requirements.txt
+
+  📥 EXISTING PROJECT
+  ─────────────────────────────────────────────────────────────
+  git clone <repo> && cd <repo>
+  uv venv
+  source .venv/bin/activate
+  uv pip install -r requirements.txt
+
+  🔧 MCP SERVER
+  ─────────────────────────────────────────────────────────────
+  mkdir mcp-server && cd mcp-server
+  uv venv --python 3.12
+  source .venv/bin/activate
+  uv pip install mcp httpx pydantic
+
+  🔄 UPDATE DEPENDENCIES
+  ─────────────────────────────────────────────────────────────
+  uv pip list --outdated
+  uv pip install --upgrade <package>
+  uv pip freeze > requirements.txt
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ SPEED COMPARISON                                                        │
+└─────────────────────────────────────────────────────────────────────────┘
+  
+  Installing Django + 20 dependencies:
+  ├─ pip:  90 seconds  ████████████████████████████████████████
+  └─ uv:    8 seconds  ████ ⚡ (11x faster)
+
+  Installing Data Science Stack:
+  ├─ pip: 120 seconds  ████████████████████████████████████████████████
+  └─ uv:   12 seconds  ████████ ⚡ (10x faster)
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ WHY UV?                                                                 │
+└─────────────────────────────────────────────────────────────────────────┘
+  ⚡ 10-100x faster than pip        💾 Smart package caching
+  🎯 Drop-in replacement            🔒 Better dependency resolution  
+  🐍 Easy Python version mgmt       ✅ Production-ready
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ PRO TIPS                                                                │
+└─────────────────────────────────────────────────────────────────────────┘
+  1. One venv per project: uv venv
+  2. Lock dependencies: uv pip freeze > requirements.txt
+  3. Use pyproject.toml for project config
+  4. Specify Python version: uv venv --python 3.12
+  5. Optional: alias pip='uv pip' for automatic use
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ TROUBLESHOOTING                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+  ❌ uv not found
+     → pip install uv --break-system-packages
+     → export PATH="$HOME/.local/bin:$PATH"
+
+  ❌ Can't activate venv
+     → source .venv/bin/activate (not just "activate")
+     → Check: ls -la .venv/
+
+  ❌ Package conflicts
+     → uv pip compile requirements.in -o requirements.txt
+     → uv pip install -r requirements.txt
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ COMPARISON: PIP VS UV                                                   │
+└─────────────────────────────────────────────────────────────────────────┘
+  
+  Command          │ pip                        │ uv
+  ─────────────────┼────────────────────────────┼───────────────────────
+  Install          │ pip install pkg            │ uv pip install pkg
+  Create venv      │ python -m venv .venv       │ uv venv
+  List packages    │ pip list                   │ uv pip list
+  Save deps        │ pip freeze > req.txt       │ uv pip freeze > req.txt
+  Speed            │ Normal (1x)                │ Fast (10-100x) ⚡
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  Get Started: pip install uv --break-system-packages                    ║
+║  Documentation: See included guide files                                ║
+║  Speed Up Development: Use UV for all your Python projects! 🚀          ║
+╚══════════════════════════════════════════════════════════════════════════╝
